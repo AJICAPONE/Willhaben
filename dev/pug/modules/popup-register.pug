@@ -1,0 +1,42 @@
+#popup-register.modal.fade(tabindex='-1', role='dialog', aria-labelledby='popup-title2', aria-hidden='true')
+    .modal-dialog.modal-dialog-centered.popup-modal--wrap(role='document')
+        .modal-content.luba-login-popup
+            .modal-header
+                .popup-login-title-wrap
+                    h5#popup-title2.modal-title Registrieren
+                    a.modal-popup-reg(data-dismiss='modal' data-toggle='modal', data-target='#popup-login') einloggen,
+                        p oder als bestehender User
+                button.close.popup-cancel(type='button', data-dismiss='modal', aria-label='Close')
+                    +icon('cancel')
+            .modal-body
+                form.popup-login-form.popup-register-form__wrapper
+                    .popup-login-form-email-wrapper
+                        label Vorname
+                        input#popup-register-name.popup-inputs(type="text")
+                    .popup-login-form-email-wrapper
+                        label Nachname
+                        input#popup-register-fam.popup-inputs(type="text")
+                    .popup-login-form-email-wrapper
+                        label E-mail
+                        input#popup-register-email.popup-inputs(type="email")
+                    .popup-login-form-email-wrapper
+                        label Passwort
+                            span minimum 8 Zeichen
+                        .popup-pass-show-pass
+                            input#popup-register-pass.popup-inputs.show-password(type="password" psswd-shown="false")
+                            +icon('pass')
+                    .popup-login-form-email-wrapper
+                        label Passwort wiederholen
+                        .popup-pass-show-pass
+                            input#popup-register-pass2.popup-inputs.show-password(type="password" psswd-shown="false")
+                            +icon('pass')
+                    .popup-login-form-email-wrapper2
+                        input.input-search-photo-agree#reg-news(type="checkbox")
+                        label(for="reg-news") Nachrichten per E-Mail erhalten
+                    .popup-login-form-email-wrapper2
+                        input.input-search-photo-agree#agree-root(type="checkbox")
+                        label(for="agree-root") Ich Stimme den Nutzungsbedingungen und der Datenschutzrichtlinie zu.
+            .modal-footer.modal-footer-padding
+                .popup-register-back(data-dismiss='modal' data-toggle='modal', data-target='#popup-login') Zurück
+                    +icon('icon-back')
+                .willhaben-button.popup-button-login(data-dismiss='modal' data-toggle='modal', data-target='#popup-mobiles') Registrieren

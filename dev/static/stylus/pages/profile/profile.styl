@@ -1,0 +1,776 @@
+.profile-my-room--wrap
+  display flex
+  background-color #fff
+  box-shadow: 7px 7px 15px -3px rgba(0, 0, 0, 0.2);
+  padding 12px 0
+  min-height 865px
+
+.personal-area--item
+  font-size 20px
+  font-family OSSB,sans-serif
+  height 48px
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 3px;
+  border-bottom 1.5px solid #3A3A3A
+  color rgba(58, 58, 58, 0.5)
+  cursor pointer
+
+.personal-area--item.active
+  background-color rgba(58, 58, 58, 0.05)
+  border-bottom 1.5px solid #01AAFF
+  color #3A3A3A
+
+.profile-tab-title
+  padding-top 15px
+  margin-bottom 28px
+
+.profile-tabs-my-room
+  display flex
+
+.profile-tabs-my-room-tab
+  position relative
+  display flex
+  color: rgba(58,58,58,0.5);
+  margin-right 48px
+  cursor pointer
+
+  span
+    position absolute
+    right -15px
+.profile-tabs-my-room--content.active-ad
+  margin-top 50px
+.profile-tabs-my-room--content.active-over
+  p
+    margin 10px 0
+    display flex
+    color: rgba(58,58,58,0.5);
+.profile-tabs-my-room--content
+  margin-right 140px
+.profile-tabs-my-room-tab.active
+  color #01AAFF !important
+  border-bottom 1.5px solid #01AAFF
+
+.profile-tabs-my-room--content__item-img
+  width: 96px;
+  height: auto;
+  margin-right 15px
+
+.profile-tabs-my-room--content__item
+  display flex
+  box-shadow: 7px 7px 15px -3px rgba(0,0,0,0.2);
+  height 100%
+  max-height 96px
+  margin-bottom 20px
+
+.profile-tabs-my-room--content__item--info
+  display flex
+  flex-direction column
+  width 100%
+
+.profile-tabs-my-room--content__item-name
+  display flex
+  justify-content space-between
+  color #01AAFF
+  margin-top 6px
+  margin-bottom 6px
+.profile-tabs-my-room-contein-icon
+  display flex
+  margin-right 15px
+  a
+    display flex
+    margin-right 14px
+
+    &:last-child
+      margin-right 0
+
+  .icon
+    size(17px)
+    fill #01AAFF
+  .icon-trash
+    fill #EE4036
+
+.profile-tabs-my-room--content__item-price
+  color #3a3a3a
+  margin-bottom 6px
+
+.profile-tabs-my-room--content__item-desc
+  font-size 14px
+  color #3a3a3a
+  font-family OSR,sans-serif
+
+.profile-add-advert
+  max-width 220px !important
+
+.profile-tabs-my-room--content
+  display none
+
+.profile-tabs-my-room--content.active
+  display block
+
+.personal-tabs-wrap
+  display none
+
+.personal-tabs-wrap.active
+  display block
+
+.rating-area-tab-title
+  color: rgba(58,58,58,0.5);
+  font-size: 20px;
+  padding-top: 30px;
+  padding-bottom: 24px;
+
+.rating-area-tab-desc
+  padding-bottom: 32px;
+  font-family OSR,sans-serif
+
+.rating-area-tab-copy-link
+  display flex
+
+.rating-area-tab-copy-input
+  margin-left 0 !important
+  border-radius: 7px 0px 0 7px;
+  border-right none !important
+
+#copyButton
+  border none
+  border-radius: 0 7px 7px 0px;
+
+
+.reviews-rating-area-item
+  display flex
+  padding-top 30px
+
+.reviews-rating-area-item__logo
+  size(56px)
+  margin-right 24px
+  border-radius 50%
+
+.reviews-rating-area-item__info--name--wrap
+  display flex
+  justify-content space-between
+  padding-bottom 8px
+
+.reviews-rating-area-item__info--name
+  display: flex;
+  font-family: OSSB, sans-serif;
+  color: #000;
+.reviews-rating-area-item__info--name--date
+  font-family OSR,sans-serif
+
+.reviews-rating-area-item__info--review
+  display: flex;
+  padding: 9px 16px;
+  font-family: OSR,sans-serif;
+  border-radius: 2px;
+  color: #101014;
+  margin-bottom: 16px;
+
+.good-review
+  background: #a5d6a7;
+
+.reviews-rating-area-item__info--review span
+  font-family: OSSB, sans-serif;
+  margin-left: 5px;
+.reviews-rating-area-item__info--review-desc
+  color: rgba(58,58,58,0.5);
+.rating-area-tab-title2
+  color: rgba(58,58,58,0.5);
+
+.reviews-rating-area-item__info--review-desc-wrap
+  padding-left 8px
+  color #000000
+  font-family OSR, sans-serif
+
+.good-review-border
+  border-left: 1.5px solid #a5d6a7;
+
+.rating-area-have-ad
+  margin-right 96px
+  display none
+
+.bad-review-border
+  border-left: 1.5px solid #e57373;
+
+.bad-review
+  background: #e57373;
+
+.profile-tabs-my-room--content-wrapper
+  padding-bottom 40px
+
+.reviews-have-rev
+  display none
+
+.rating-waiting-rating-people--list
+  display flex
+  flex-flow wrap
+  justify-content space-between
+
+.rating-waiting-rating-people--item
+  flex-shrink: 0;
+  flex-grow: 0;
+  flex-basis: calc(33% - 30px);
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 30px;
+  align-items: center;
+
+.rating-waiting-rating-people--item__img
+  size(80px)
+  margin-bottom: 24px;
+  border-radius 50%
+
+.rating-waiting-rating-people--info
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+.rating-waiting-rating-people--info__name
+  font-family: OSSB, sans-serif;
+  color: #3A3A3A;
+  padding-bottom: 24px;
+
+.rating-waiting-rating-people--info-get-review
+  background-color transparent !important
+  color #01AAFF !important
+  border 1.5px solid #01AAFF !important
+
+.rating-area-tab-desc2
+  font-family OSR,sans-serif
+  margin-bottom 32px
+  margin-top 30px
+
+.controls-message
+  display flex
+  align-items: center;
+  padding-bottom: 32px;
+
+.message-massage-all-input
+  width 100%
+  max-width: 300px;
+  padding-top: 37px;
+  padding-bottom: 16px;
+
+.index-checkbox-search
+  display: flex;
+  align-items: center;
+  font-family: OSR, sans-serif;
+
+.message-actions .icon
+  size(16px)
+  margin-right: 8px;
+
+.delete-message
+
+  .icon
+    fill #EE4036
+
+  span
+    color #EE4036 !important
+    margin-right: 24px;
+
+.blocked-message
+
+  span
+    color #000 !important
+    margin-right: 24px;
+
+  .icon
+    fill #000
+
+.controls-message .index-checkbox-search
+  margin-right: 24px;
+
+#check-all
+  display none
+
+#check-all + label
+  position: relative;
+  width: 20px;
+  height: 20px;
+  margin-bottom: 0;
+  margin-right: 9px;
+  cursor: pointer;
+
+#check-all + label:before
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 1.5px solid #01aaff;
+  border-radius: 5px;
+  display: flex;
+
+#check-all:checked + label:after
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 10px;
+  background: #01aaff;
+  width: 2px;
+  height: 2px;
+  box-shadow: 4px 0px 0 #01aaff,2px 0px 0 #01aaff, -2px 0px 0 #01aaff, 4px 0 0 #01aaff, 4px -2px 0 #01aaff, 4px -4px 0 #01aaff, 4px -6px 0 #01aaff, 4px -7px 0 #01aaff,  4px -9px 0 #01aaff;
+  transform: rotate(45deg);
+
+.message-area-all-item__img
+  size(104px)
+
+.message-area-all-item
+  display: flex;
+  margin-bottom 20px
+  max-height 104px
+  box-shadow: 7px 7px 15px -3px rgba(0,0,0,0.2);
+
+.message-area-all-item-checkbox
+  position: relative;
+  margin-right: 16px;
+
+.message-area-all-item--name-title--date-wrap
+  display flex
+  justify-content space-between
+
+.message-area-all-item--name-title
+  padding-bottom: 4px;
+  color #01AAFF
+  font-family OSSR, sans-serif
+
+.message-area-all-item--name-date
+  color: #686874;
+  display: flex;
+
+.message-area-all-item--name-time
+  color: rgba(104,104,116,0.51);
+  display: flex;
+  margin-left: 8px;
+  font-family: OSL, sans-serif;
+
+.message-area-all-item__info--profile
+  display flex
+
+.message-area-all-item__info__img-profile
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  border-radius 50%
+
+.message-area-all-item__info--profile--name
+  font-family: OSSB, sans-serif;
+  padding-bottom: 8px;
+  color #3a3a3a
+
+.message-area-all-item__info--profile--mess
+  font-family OSR,sans-serif
+  color: rgba(58,58,58,0.5);
+
+.message-area-all-item--wrapper
+  display flex
+
+.message-area-all-item__info
+  padding-right 30px
+  padding-top 10px
+  padding-bottom 10px
+
+.message-area-all-item-check-check,.message-area-all-item-check-check2
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border: 1.5px solid #01aaff;
+  border-radius: 5px;
+  display: flex;
+  margin-right 10px
+
+.message-area-all-item-check-check.checked:before,.message-area-all-item-check-check2.checked:before
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: 8px;
+  background: #01aaff;
+  width: 2px;
+  height: 2px;
+  box-shadow: 4px 0px 0 #01aaff, 2px 0px 0 #01aaff, -2px 0px 0 #01aaff, 4px 0 0 #01aaff, 4px -2px 0 #01aaff, 4px -4px 0 #01aaff, 4px -6px 0 #01aaff, 4px -7px 0 #01aaff, 4px -9px 0 #01aaff;
+  transform: rotate(45deg);
+
+.check-message,.check-message2
+  display none
+
+#check-offer
+  display none
+
+
+#check-offer + label
+  position: relative;
+  width: 20px;
+  height: 20px;
+  margin-bottom: 0;
+  margin-right: 9px;
+  cursor: pointer;
+
+#check-offer + label:before
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 1.5px solid #01aaff;
+  border-radius: 5px;
+  display: flex;
+
+#check-offer:checked + label:after
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 10px;
+  background: #01aaff;
+  width: 2px;
+  height: 2px;
+  box-shadow: 4px 0px 0 #01aaff,2px 0px 0 #01aaff, -2px 0px 0 #01aaff, 4px 0 0 #01aaff, 4px -2px 0 #01aaff, 4px -4px 0 #01aaff, 4px -6px 0 #01aaff, 4px -7px 0 #01aaff,  4px -9px 0 #01aaff;
+  transform: rotate(45deg);
+
+.massage-blacklist-wrap
+  width: 100%;
+  margin-top: 37px;
+
+.massage-blacklist-wrap tr:nth-child(odd)
+  background-color: #fff;
+
+.massage-blacklist-wrap tr:nth-child(even)
+  background-color: rgba(1, 170, 255, 0.11);
+
+.massage-blacklist-people--title
+  font-family: OSSB, sans-serif;
+  color: #101014;
+  font-size: 16px;
+
+.massage-blacklist-people
+  width: 35%;
+  padding: 10px 24px;
+  font-family: OSR, sans-serif;
+  font-size: 14px;
+  color: #686874;
+  border-right: 2px solid  #01aaff;
+
+.massage-blacklist-item
+  width: 65%;
+  padding: 10px 18px;
+  font-family: OSR, sans-serif;
+  font-size: 14px;
+  color: #686874;
+
+.massage-blacklist-people--title
+  border-right none
+  font-family OSSB, sans-serif
+  color #3a3a3a
+  background-color #fff
+.massage-people-black-name
+  padding-left 0
+
+
+.rating-area-tab-title2
+  font-size 16px
+
+.profile-tabs-my-room--content2
+  margin-right 140px
+
+.notification-all--item
+  display: flex;
+  position relative
+  border-top: 1.5px solid rgba(104,104,116,0.21);
+  padding: 24px 15px;
+
+.notification-all--item__img
+  width: 56px;
+  height: 56px;
+  margin-right: 24px;
+  border-radius 50%
+
+.notification-all--item__name
+  font-family OSSB, sans-serif
+
+.notification-all--item__name2
+  font-family: OSR, sans-serif;
+  margin-left: 5px;
+
+.notification-all--item__link
+  font-family: OSSB, sans-serif;
+  color: #01aaff;
+  margin-left: 5px;
+
+.notification-all--item:last-child
+  border-bottom: 1.5px solid rgba(104,104,116,0.21)
+
+.notific-button-delete
+  position absolute
+  right 0
+  top 0
+
+  .icon
+    size(10px)
+    fill rgba(58,58,58,0.5);
+
+.notification-hide
+  display none
+
+.purce-balanse-rep
+  font-size: 16px;
+  font-family: OSSB, sans-serif;
+  padding-top: 37px;
+  padding-bottom: 16px;
+
+.purce-balance-inputs
+  display flex
+  width 100%
+
+  input
+    margin-left 0
+    border-radius 8px 0 0 8px
+    border-right none
+    max-width: 175px;
+    background: rgba(58,58,58,0.02);
+
+.purce-wallet
+  width: 100%;
+  max-width: 120px;
+  .select-input
+    border-radius 0 8px 8px 0
+    padding-left 25px
+    background: rgba(58,58,58,0.02);
+
+.purce-all-wallet-list--wrap
+  display flex
+
+
+.purce-all-wallet-list
+  display flex
+  align-items center
+
+.purce-all-wallet-item
+  margin-right 38px
+
+.rating-area-tab-title3
+  padding-top 30px
+  color: rgba(58,58,58,0.5);
+  font-size: 16px;
+  font-family OSSB, sans-serif
+
+.purce-balance-item
+  display: flex;
+  align-items: center;
+  border-top: 1.5px solid rgba(104,104,116,0.2);
+  padding: 24px 15px;
+
+.purce-balance-img
+  size(50px)
+  margin-right: 24px;
+
+.purce-balance-text
+  font-family OSR, sans-serif
+
+.purce-balance-text2
+  margin-left: 5px;
+  font-family: OSSB, sans-serif;
+
+.purce-balance-item:last-child
+  border-bottom: 1.5px solid rgba(104,104,116,0.2);
+
+.purce-balance-list
+  padding-top 30px
+
+.purce-balance-list-hide
+  display none
+
+.bye-pack .purce-balanse-rep
+  color: rgba(58,58,58,0.5);
+
+.bye-button-tab
+  background-color transparent !important
+  color #01aaff !important
+  border 1.5px solid #01aaff !important
+
+.settings-wrap
+  display flex
+  padding-bottom: 32px;
+
+.setting-load-image
+  position: relative;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  margin-right: 40px;
+
+  input[type=file]
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    cursor: pointer;
+.settings__image
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+
+.change-image
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f7f7fa;
+  color: #0f83d7;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  opacity: 0.8;
+  display: none;
+  z-index: 1;
+
+.setting-load-image:hover .change-image
+  display: flex;
+
+.settings-profile--info
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+.setting-profile--info__name
+  display: flex;
+  padding-bottom: 10px;
+  align-items: center;
+  position: relative;
+  width: fit-content;
+
+  .inputs
+    position: absolute !important
+    left: 0;
+    bottom: -40px;
+    display: none;
+    background-color: #fff;
+    z-index: 2;
+    width: 100%;
+    margin-left 0
+
+.setting-name-input
+  font-family: OSSB, sans-serif;
+  font-size: 22px;
+
+.setting-profile--info__name-change
+  margin-left: 15px;
+  cursor: pointer;
+
+  .icon
+    width: 15px;
+    height: 15px;
+    fill: #686874;
+
+    &:hover
+      fill #0f83d7;
+
+
+.setting-town-input
+  font-family OSR,sans-serif
+  font-size 20px
+
+.setting-raion-input
+  color: #686874;
+  font-family: OSR, sans-serif;
+  font-size: 22px;
+
+.settings-profile-items
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 0px;
+  border-top: 1.5px solid #e1e1e3;
+
+.settings-profile--items-name
+  color: #3a3a3a;
+  font-family OSB, sans-serif
+
+.settings-profile--items-option
+  font-family: OSR, sans-serif;
+  color: #3A3A3A;
+  display: flex
+
+.settings-profile--items-change
+  color: #0f83d7;
+  font-family: OSR, sans-serif;
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+
+.settings-profile-items:last-child
+  border-bottom: 1.5px solid #e1e1e3;
+
+.profile-email-notific-settings
+  flex-direction: column;
+
+.settings-profile-items
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 0px;
+  border-top: 1.5px solid #e1e1e3;
+
+.settings-profile-email-notific
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 25px;
+
+.settings-profile-email-service
+  display: flex;
+  flex-direction: column;
+
+.settings-profile-email-service--name
+  font-family: OSR, sans-serif;
+  font-size: 16px;
+  color: #3A3A3A
+
+.settings-profile-email-service--desc
+  font-size: 14px;
+  font-family: OSR, sans-serif;
+  color: #686874;
+
+.settings-profile--items-change-checked
+  display: flex;
+  width: 48px;
+  height: 24px;
+  background: #e1e1e3;
+  border-radius: 16px;
+  position: relative;
+  will-change: transform;
+
+.settings-profile--items-change-checked:before
+  content: '';
+  position: absolute;
+  transform: translateX(2px);
+  top: 2px;
+  background-color: #686874;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  transition-duration: 200ms;
+  will-change: transform;
+
+.settings-profile--items-change-checked.checked:before
+  content: '';
+  position: absolute;
+  transform: translateX(26px);
+  top: 2px;
+  background-color: #0f83d7;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+
+.settings-profile--items-change-check
+  display none
+
+
+

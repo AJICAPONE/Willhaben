@@ -1,0 +1,797 @@
+header
+  //padding 20px 0
+  //box-shadow: 0px 0px 50px -10px #00000091;
+  z-index 11
+  position relative
+
+
+.header-wrap
+  padding 20px 0
+  box-shadow: 0px 0px 50px -10px #00000091;
+  z-index 11
+  position relative
+  background-color #fff
+
+.popup-menu-catalog--item
+  height 40px
+  padding 7px
+  padding-left 15px
+  border-radius 7px 0px 0 7px
+
+.popup-menu-catalog--item.active
+    background-color #3a3a3a2e
+
+
+  a
+    display flex
+    align-items center
+    font-family OSR,sans-serif
+
+    span
+      color #3A3A3A
+
+.popup-icon-pos
+  .icon
+    size(36px,26px)
+    position relative
+    left -3%
+
+.popup-menu-catalog
+  position absolute
+  right 0
+  left 0
+  width 100%
+  height 471px
+  bottom 0
+  background-color #fff
+  z-index 10
+  will-change transform
+  transform translateY(0px)
+  transition-duration 250ms
+
+.popup-menu-catalog.active
+  transform translateY(470px)
+
+
+.header-container
+  position relative
+  z-index 11
+
+.header-content
+  display flex
+  justify-content space-between
+  border-bottom 1.5px solid rgba(173, 173, 173, 0.2)
+  padding-bottom 20px
+.header-advert-region
+  display flex
+  align-items center
+  padding 0
+.header-region-choise
+  display flex
+  flex-direction column
+  padding-left 30px
+
+  a
+    font-size 12px
+    color #01AAFF
+
+.logo-wrap
+
+  .icon
+    size(150px,40px)
+
+.header-logo-register
+  display flex
+  align-items center
+  justify-content space-between
+  padding 0
+
+.header-login-reg
+  display flex
+  color #01AAFF
+  cursor pointer
+
+
+.header-areas-list
+  display flex
+  padding 18px 0
+.header-areas-item
+  margin-right 40px
+
+  a
+    color #01AAFF
+.header-search
+  padding 0
+  display flex
+
+  .selectCF
+    max-width 185px
+
+.onCF li ul
+  display block
+
+.selectCF
+  width 100%
+
+.select
+  width 100%
+  position relative
+
+.select-input
+  position: relative;
+  background: rgba(58, 58, 58, 0.05);
+  border 1.5px solid rgba(173, 173, 173, 1)
+  padding: 10px;
+  font-family: OSSB, sans-serif;
+  border-radius: 6px;
+  color: #3A3A3A;
+  height: 45px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+.append-icon
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 0px;
+  z-index: 20;
+
+.select-options
+  position: absolute;
+  left: 0;
+  right: 0;
+  border: 1px solid #686874;
+  z-index: 21;
+  display: none;
+  border-top: 0;
+
+.select-options li
+  padding: 8px 12px;
+  background-color: #fff;
+  font-family: SFPDR, sans-serif;
+  cursor: pointer;
+
+.append-icon
+
+  .icon
+    position: absolute;
+    right: 14px;
+    size(20px,10px)
+    fill #3A3A3A;
+
+
+.header-category-button
+  position: relative;
+  background: rgba(58,58,58,0.05);
+  border: 1.5px solid #adadad;
+  border-right 0
+  padding: 10px;
+  font-family: OSSB, sans-serif;
+  border-radius: 6px 0px 0px 6px;
+  color: #3a3a3a;
+  height: 45px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-align left
+  margin-left  30px
+
+  .icon
+    size(16px)
+    fill #3a3a3a
+    margin-left 6px
+    margin-right 16px
+
+.inputs
+  position: relative;
+  background: rgba(58,58,58,0.05);
+  border: 1.5px solid #adadad;
+  padding: 10px;
+  font-family: OSSB, sans-serif;
+  color: #3a3a3a;
+  height: 45px;
+  width: 100%;
+  font-size 13px
+  padding-left 25px
+  margin-left 30px
+
+.header-search__button
+  position: relative;
+  display flex
+  background-color #fff
+  border: 1.5px solid #adadad;
+  border-left 0
+  padding: 10px;
+  border-radius 0px 6px 6px 0px
+  font-family: OSSB, sans-serif;
+  color: #3a3a3a;
+  height: 45px;
+  width: 100%;
+  max-width 130px
+  font-size 14px
+
+  .icon
+    size(20px)
+    fill #3a3a3a
+    margin-right 15px
+    margin-left 10px
+#only_photo
+  display none
+#only_photo + label
+  position relative
+  size(16px)
+  margin-bottom 0
+  margin-right 13px
+  cursor pointer
+
+#only_photo + label:before
+  content ''
+  position absolute
+  size(16px)
+  border: 1.5px solid #adadad;
+  border-radius 5px
+  display flex
+
+#only_photo:checked + label:after
+  content ''
+  position absolute
+  left: 4px;
+  top: 7px;
+  background: #01AAFF;
+  width: 2px;
+  height: 2px;
+  box-shadow: 2px 0px 0 #01AAFF, -2px 0px 0 #01AAFF, 4px 0 0 #01AAFF, 4px -2px 0 #01AAFF, 4px -4px 0 #01AAFF, 4px -6px 0 #01AAFF, 4px -7px 0 #01AAFF;
+  transform: rotate(45deg);
+
+
+.header-search-content
+  display flex
+  align-items center
+
+.header-search__only-logo
+  display flex
+  justify-content center
+  align-items center
+
+.popup-menu-catalog--list
+  display flex
+  flex-direction column
+
+.popup-menu-catalog--item
+  display flex
+
+  .icon
+    size(36px,20px)
+    margin-right 8px
+
+.popup-menu-catalog-wrapper
+  display flex
+  padding-top 40px
+
+.popup-menu-areas:nth-child(2)
+  border-left 1.5px solid rgba(58,58,58,0.2);
+  border-right 1.5px solid rgba(58,58,58,0.2);
+  padding-right 0
+
+.popup-menu-areas
+  padding-left 25px
+
+  &:first-child
+    padding 0
+
+.popup-header-my-items--item--level2
+  display flex
+  align-items center
+  height 40px
+  padding: 7px;
+  padding-left: 15px;
+  border-radius: 7px 0px 0 7px;
+
+  a
+    color #3a3a3a
+    font-family OSR,sans-serif
+
+.popup-header-my-items--item--level2.active
+    background-color #3a3a3a2e
+
+
+.popup-header-my-items--item--title
+  height 40px
+  padding 7px
+  padding-left: 15px;
+
+
+.popup-header-my-items--item--level3
+  display flex
+  align-items center
+  height 40px
+  padding: 7px;
+  padding-left: 15px;
+  border-radius: 7px 0px 0 7px;
+
+  a
+    color #01AAFF
+    font-family OSR,sans-serif
+.popup-header-my-items--list
+  display none
+
+.popup-header-my-items--list.active
+  display block
+.popup-header-my-items--list2
+  display none
+
+.popup-header-my-items--list2.active
+  display block
+
+
+.popup-header-my-items--list3
+  display none
+.popup-header-my-items--list3.active
+  display block
+
+
+.popup-cancel
+
+  .icon
+    size(16px)
+.modal-content
+  border none
+
+.popup-modal--wrap
+  width 100%
+  max-width 550px
+
+.luba-login-popup
+  background-color #F6F2F4
+
+.modal-header
+  border none
+  padding 35px 25px 0 85px
+
+.modal-body
+  padding 15px 85px
+
+.popup-login-title-wrap
+  display flex
+  flex-direction column
+
+  .modal-title
+    margin-bottom 18px
+
+  p
+    font-family OSSL,sans-serif
+    font-size 12px
+    color #3A3A3A
+
+.modal-popup-reg
+    font-family OSSL,sans-serif
+    font-size 12px
+    color #01aaff !important
+    cursor pointer
+
+
+.popup-login-form-email-wrapper
+  display flex
+  flex-direction column
+
+.popup-inputs
+  position: relative;
+  border: 1.5px solid #adadad;
+  background-color transparent
+  padding: 10px;
+  font-family: OSSB, sans-serif;
+  color: #3a3a3a;
+  height: 45px;
+  width: 100%;
+  font-size: 13px;
+  padding-left: 25px;
+  border-radius 7px
+
+.popup-pass-show-pass
+  position relative
+
+  .icon
+    position absolute
+    right 18px
+    top 0
+    size(18px,100%)
+    fill #ADADAD
+    cursor pointer
+
+.popup-pass--wrap
+  margin-top 16px
+
+.remember-pass--wrap
+  display flex
+  justify-content space-between
+  align-items center
+  margin-top 40px
+
+#remember-pass
+  display none
+
+#remember-pass + label
+  position: relative;
+  margin-bottom 0
+
+
+#remember-pass + label:before
+  content: '';
+  position: relative;
+  width: 22px;
+  height: 22px;
+  border: 1.5px solid #adadad;
+  border-radius: 5px;
+  display: flex;
+  background transparent
+  margin-right 8px
+  cursor pointer
+
+#remember-pass:checked + label:after
+  content: '';
+  position: absolute;
+  left: 6px;
+  top: 11.9px;
+  background: #fff;
+  width: 2px;
+  height: 2px;
+  box-shadow: -4px 0px 0 #fff, 2px 0px 0 #fff, -2px 0px 0 #fff, 4px 0 0 #fff, 4px -2px 0 #fff, 4px -4px 0 #fff, 4px -6px 0 #fff, 4px -7px 0 #fff, 4px -9px 0 #fff, 4px -11px 0 #fff
+  transform: rotate(45deg);
+
+#remember-pass:checked + label:before
+  content ''
+  background-color #01aaff
+  border 1.5px solid #01aaff
+
+
+.index-checkbox-search
+  display flex
+  align-items center
+
+.index-checkbox-search
+
+  span
+    font-family OSR,sans-serif
+
+.restore-pass
+  color #01aaff
+  cursor pointer
+
+.popup-button-login
+  border none
+  outline none
+  margin: 40px auto 0;
+
+  &:focus
+    outline none
+
+.modal-footer-border
+  border-top: 1.5px solid rgba(173,173,173,0.2) !important
+  justify-content center
+  flex-direction column
+
+  p
+    font-size 12px
+    font-family OSR,sans-serif
+    color #3a3a3a
+    margin-top 26px
+    text-align center
+    width 100%
+    max-width: 330px;
+    margin-bottom 26px
+
+.popup-register--link
+  background-color transparent !important
+  border 1.5px solid #01aaff
+  color #01aaff !important
+  margin 26px auto 0
+
+
+.modal-footer>:not(:last-child)
+  margin 0
+  margin-top 26px
+
+
+.popup-register-form__wrapper
+
+  .popup-login-form-email-wrapper
+    margin-bottom 12px
+
+    label
+      display flex
+      justify-content space-between
+
+      span
+        font-size 12px
+        font-family OSR,sans-serif
+
+#reg-news
+  display none
+
+#reg-news + label
+  position: relative;
+  display flex
+  font-family OSR,sans-serif
+  align-items center
+
+#reg-news + label:before
+  content: '';
+  position: relative;
+  width: 22px;
+  height: 22px;
+  border: 1.5px solid #adadad;
+  border-radius: 5px;
+  display: flex;
+  background transparent
+  margin-right 8px
+  cursor pointer
+
+#reg-news:checked + label:after
+  content: '';
+  position: absolute;
+  left: 6px;
+  top: 11.9px;
+  background: #fff;
+  width: 2px;
+  height: 2px;
+  box-shadow: -4px 0px 0 #fff, 2px 0px 0 #fff, -2px 0px 0 #fff, 4px 0 0 #fff, 4px -2px 0 #fff, 4px -4px 0 #fff, 4px -6px 0 #fff, 4px -7px 0 #fff, 4px -9px 0 #fff, 4px -11px 0 #fff
+  transform: rotate(45deg);
+
+#reg-news:checked + label:before
+  content ''
+  background-color #01aaff
+  border 1.5px solid #01aaff
+
+
+#agree-root
+  display none
+
+#agree-root + label
+  position: relative;
+  display flex
+  font-family OSR,sans-serif
+  align-items center
+
+#agree-root + label:before
+  content: '';
+  position: relative;
+  width: 22px;
+  height: 22px;
+  border: 1.5px solid #adadad;
+  border-radius: 5px;
+  display: flex;
+  background transparent
+  margin-right 8px
+  cursor pointer
+  flex-shrink: 0;
+
+#agree-root:checked + label:after
+  content: '';
+  position: absolute;
+  left: 6px;
+  top: 20.9px;
+  background: #fff;
+  width: 2px;
+  height: 2px;
+  box-shadow: -4px 0px 0 #fff, 2px 0px 0 #fff, -2px 0px 0 #fff, 4px 0 0 #fff, 4px -2px 0 #fff, 4px -4px 0 #fff, 4px -6px 0 #fff, 4px -7px 0 #fff, 4px -9px 0 #fff, 4px -11px 0 #fff
+  transform: rotate(45deg);
+
+#agree-root:checked + label:before
+  content ''
+  background-color #01aaff
+  border 1.5px solid #01aaff
+
+.popup-login-form-email-wrapper2
+  display flex
+  margin-bottom 12px
+
+.modal-footer-padding
+  padding: 0px 85px 18px 85px;
+  display flex
+  justify-content space-between
+
+  .willhaben-button
+    margin auto 0
+
+.popup-register-back
+  display flex
+  flex-direction row-reverse
+  align-items center
+  margin-top 0 !important
+  color #01aaff
+  cursor pointer
+
+  .icon
+    size(8px,14px)
+    margin-right 14px
+    fill #01aaff
+
+.registered-footer
+  justify-content center
+  align-items center
+
+.forgot-pass-reg
+  margin auto 0
+  margin-top 25px
+
+.mobile-header-content
+  display none
+  margin-bottom 32px
+  justify-content space-between
+
+.mobile-icons-head .icon
+  width: 40px;
+  height: 40px;
+  fill: #01aaff
+
+.mobile-login-active
+  display none
+
+.mobile-logo .icon
+  width: 150px;
+  height: 40px;
+
+
+.mobile-fixed-menus
+  position fixed
+  top 0
+  right 0
+  left 0
+  bottom 0
+  z-index 100
+  display none
+  background-color #fff
+  will-change: transform;
+  transition-duration: 300ms;
+  transform: translateX(-100%);
+
+.mobile-fixed-menus-icon
+  position: fixed
+  right: 15px;
+  top: 20px;
+  float: right;
+  z-index 201
+
+  .icon
+    width: 23px;
+    height: 23px;
+    fill: #01aaff
+
+.mobile-list__links--wrap
+  display flex
+  flex-direction column
+
+.mobile-catalog-fixed--wrapper
+  padding: 100px 20px;
+
+.mobile-catalog-menu-title
+  font-size: 22px;
+  font-family: OSB, sans-serif;
+  padding: 10px 0;
+
+.mobile-fixed-menus.active
+  transform: translateX(0%);
+
+
+.header-mobile-choise-region
+  display: flex;
+  flex-direction: column;
+  background: #f7f7fa;
+  border-radius: 6px;
+  padding: 16px;
+
+.header-light-font-blue
+  font-size: 14px;
+  color: #01aaff
+  cursor: pointer;
+  font-family: OSL, sans-serif;
+.header-mobile-choise-region-text
+
+    span
+      font-family OSB, sans-serif
+.mobile-region-choise
+  font-family OSSB, sans-serif !important
+
+.header-main-contents-region
+  padding 0
+  display none
+  margin-bottom 10px
+
+.mobile-serach-form
+  display flex
+  width: 100%;
+  margin-bottom: 16px;
+
+.mobile-search-input
+  width: 100%;
+  background: #fff;
+  border: 1.5px solid #01aaff
+  border-radius: 6px 0px 0px 6px;
+  padding: 7px;
+  border-right: 0;
+  color: #3a3a3a;
+
+.mobile-search-button
+  background-color: #01aaff
+  border-radius: 0px 6px 6px 0px;
+  border: 1.5px solid #01aaff
+  cursor: pointer;
+  height: 41px;
+  width: 60px;
+
+  .icon
+    size(18px)
+    fill: #fff;
+
+.mobile-small-search
+  padding 0
+  display none
+
+.mobile-category-filters
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+.mobile-buttons-mobile
+  background: #01aaff
+  border-radius: 6px;
+  padding: 10px;
+  width: 100%
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  cursor: pointer;
+  font-family: OSR, sans-serif;
+
+  .icon
+    size(20px)
+    fill: #fff;
+    margin-right: 16px;
+
+
+.mobile-popup-menu-catalog
+  position fixed
+  top 0
+  right 0
+  left 0
+  bottom 0
+  background-color #fff
+  z-index 199
+  overflow-y scroll
+  will-change: transform;
+  transition-duration: 300ms;
+  transform: translateX(-100%);
+
+  .popup-menu-catalog-wrapper
+    padding-top 100px
+    margin: 0px 20px
+
+  .popup-menu-catalog--item
+    border-radius 7px
+
+  .popup-menu-areas:nth-child(2)
+    border none
+    padding-left 0 !important
+
+  .popup-menu-areas
+    padding 0
+    margin-bottom 20px
+  .popup-header-my-items--item--level2
+    border-radius 7px
+
+.mobile-popup-menu-catalog.active
+  transform: translateX(0%);
+
+
+
+
+

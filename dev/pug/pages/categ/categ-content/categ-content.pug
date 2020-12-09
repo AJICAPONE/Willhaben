@@ -1,0 +1,119 @@
+section.categ
+    .container
+        h4.section-title Спорт,хобби и отдых
+        .categ-wrapper
+            .col-lg-3.col-xl-3
+                aside.sidebar-catalog
+                    ul.catalog-list
+                        li.catalog-item
+                            span Спорт,хобби и отдых
+                                +icon('arrow-prev')
+                            ul.catalog-list-level2
+                                li.catalog-item-level2
+                                    span Билеты и путешествия
+                                        +icon('arrow-prev')
+                                    ul.catalog-list-level3
+                                        li.catalog-item-level3
+                                            a(href="/") Путешествие 1
+                                        li.catalog-item-level3
+                                            a(href="/") Путешествие 2
+                                        li.catalog-item-level3
+                                            a(href="/") Путешествие 3
+                                        li.catalog-item-level3
+                                            a(href="/") Путешествие 4
+                                li.catalog-item-level2
+                                    span Велосипеды
+                                        +icon('arrow-prev')
+                                    ul.catalog-list-level3
+                                        li.catalog-item-level3
+                                            a(href="/") Горные
+                                        li.catalog-item-level3
+                                            a(href="/") Дорожные
+                                        li.catalog-item-level3
+                                            a(href="/") BMX
+                                        li.catalog-item-level3
+                                            a(href="/") Детские
+                                        li.catalog-item-level3
+                                            a(href="/") Запчасти и аксесуары
+                    form.categ-filter-price
+                        span Цена
+                        .categ-filter-price-wrap
+                            input.categ-fil-price(type="text" placeholder="от")
+                            input.categ-fil-price(type="text" placeholder="до")
+                        button.willhaben-button.categ-filter-show-items(type="submit") Показать объявления
+
+
+            .col-lg-9.col-xl-9
+                .catalog-sort
+                    .catalog-sort-wrap.catalog-sort-wrap--desc.d-flex.justify-content-between
+                        .catalog-sort-sort.d-flex
+                            .catalog-sort-all.catalog-sort-all--items.active Все
+                            .catalog-sort-private.catalog-sort-all--items Частные
+                            .catalog-sort-company.catalog-sort-all--items Компании
+                        .catalog-sort-by--wrap
+                            select.test
+                                option(value="1") По умолчанию
+                                option(value="1") По дате
+                                option(value="1") По цене (мин)
+                                option(value="1") По цене (макс)
+                ul.catalog-items--list.categ-filter-items
+                    li.catalog-items--item
+                        a.catalog-items--item--link__img(href="/")
+                            img.catalog-items--item__img(src="/static/img/content/catalog/1.png")
+                        .catalog-info-block
+                            .catalog-price-info
+                                span 700 €
+                                .catalog-date-info Сегодня
+                                    span 12:40
+                            a.catalog-name__item(href="/") Велосипед
+                            .catalog-city__name Вена
+                    li.catalog-items--item
+                        a.catalog-items--item--link__img(href="/")
+                            img.catalog-items--item__img(src="/static/img/content/catalog/2.png")
+                        .catalog-info-block
+                            .catalog-price-info
+                                span 700 €
+                                .catalog-date-info Сегодня
+                                    span 12:40
+                            a.catalog-name__item(href="/") Велосипед
+                            .catalog-city__name Вена
+                    li.catalog-items--item
+                        a.catalog-items--item--link__img(href="/")
+                            img.catalog-items--item__img(src="/static/img/content/catalog/3.png")
+                        .catalog-info-block
+                            .catalog-price-info
+                                span 700 €
+                                .catalog-date-info Сегодня
+                                    span 12:40
+                            a.catalog-name__item(href="/") Велосипед
+                            .catalog-city__name Вена
+                    li.catalog-items--item
+                        a.catalog-items--item--link__img(href="/")
+                            img.catalog-items--item__img(src="/static/img/content/catalog/4.png")
+                        .catalog-info-block
+                            .catalog-price-info
+                                span 700 €
+                                .catalog-date-info Сегодня
+                                    span 12:40
+                            a.catalog-name__item(href="/") Велосипед
+                            .catalog-city__name Вена
+                    li.catalog-items--item
+                        a.catalog-items--item--link__img(href="/")
+                            img.catalog-items--item__img(src="/static/img/content/catalog/4.png")
+                        .catalog-info-block
+                            .catalog-price-info
+                                span 700 €
+                                .catalog-date-info Сегодня
+                                    span 12:40
+                            a.catalog-name__item(href="/") Велосипед
+                            .catalog-city__name Вена
+                ul.categ-filter-items-pages--list
+                    li.categ-filter-items-pages--item.active 1
+                    li.categ-filter-items-pages--item 2
+                    li.categ-filter-items-pages--item 3
+                    li.categ-filter-items-pages--item ...
+                    li.categ-filter-items-pages--item 7
+                    li.categ-filter-items-pages--item 8
+                    li.categ-filter-items-pages--item 9
+                    li.categ-filter-items-pages--item
+                        +icon('arrow-prev')

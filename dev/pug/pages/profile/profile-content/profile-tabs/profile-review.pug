@@ -1,0 +1,116 @@
+.profile-my-room-tab
+    h4.profile-tab-title Bewertung und Feedback
+    .profile-tabs-my-room
+        .profile-tabs-my-room-tab.active(data-area="review-rating") Bewertung
+        .profile-tabs-my-room-tab(data-area="review-rev") Meine Bewertungen
+        .profile-tabs-my-room-tab(data-area="review-waiting") Warten auf Bewertung
+
+    .profile-tabs-my-room--content-wrapper
+        .profile-tabs-my-room--content.review-rating.active
+            h4.rating-area-tab-title Sie haben noch keine Bewertung bekommen
+            p.rating-area-tab-desc Um eine Bewertung zu bekommen, senden Sie dem Käufer einen Link zu Ihrem Profil, damit er Feedback hinterlässt und Sie eine Bewertung erhalten
+            .rating-area-tab-copy-link
+                input.rating-area-tab-copy-input.inputs#copyTarget(type="text" placeholder="Link hier")
+                button#copyButton.willhaben-button Kopieren
+        // Скрытый case Недавние обьявления
+        .rating-area-have-ad
+            h5.rating-area-tab-title Aktuelle Anzeigen
+            ul.catalog-items--list.categ-filter-items
+                li.catalog-items--item
+                    a.catalog-items--item--link__img(href="/")
+                        img.catalog-items--item__img(src="/static/img/content/catalog/1.png")
+                    .catalog-info-block
+                        .catalog-price-info
+                            span 700 €
+                            .catalog-date-info Heute
+                                span 12:40
+                        a.catalog-name__item(href="/") Helm
+                        .catalog-city__name Wien
+                li.catalog-items--item
+                    a.catalog-items--item--link__img(href="/")
+                        img.catalog-items--item__img(src="/static/img/content/catalog/2.png")
+                    .catalog-info-block
+                        .catalog-price-info
+                            span 700 €
+                            .catalog-date-info Heute
+                                span 12:40
+                        a.catalog-name__item(href="/") Roller
+                        .catalog-city__name Wien
+                li.catalog-items--item
+                    a.catalog-items--item--link__img(href="/")
+                        img.catalog-items--item__img(src="/static/img/content/catalog/3.png")
+                    .catalog-info-block
+                        .catalog-price-info
+                            span 700 €
+                            .catalog-date-info Heute
+                                span 12:40
+                        a.catalog-name__item(href="/") Fahrrad
+                        .catalog-city__name Wien
+
+            h5.rating-area-tab-title2 Bewertungen
+            ul.reviews-rating-area-list
+                li.reviews-rating-area-item
+                    img.reviews-rating-area-item__logo(src="static/img/general/seller.png")
+                    .reviews-rating-area-item__info
+                        .reviews-rating-area-item__info--name--wrap
+                            span.reviews-rating-area-item__info--name Feedback an: Sebastian kurz
+                            span.reviews-rating-area-item__info--name--date 23.02.2019
+                        span.reviews-rating-area-item__info--review.good-review Anzeige:
+                            span Mountainbike in einwandfreiem Zustand ...
+                        .reviews-rating-area-item__info--review-desc-wrap.good-review-border
+                            p.reviews-rating-area-item__info--review-desc Text is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+
+                li.reviews-rating-area-item
+                    img.reviews-rating-area-item__logo(src="static/img/general/none.png")
+                    .reviews-rating-area-item__info
+                        .reviews-rating-area-item__info--name--wrap
+                            span.reviews-rating-area-item__info--name Feedback an: Sebastian kurz
+                            span.reviews-rating-area-item__info--name--date 23.02.2019
+                        span.reviews-rating-area-item__info--review.bad-review Anzeige:
+                            span Mountainbike in einwandfreiem Zustand ...
+                        .reviews-rating-area-item__info--review-desc-wrap.bad-review-border
+                            p.reviews-rating-area-item__info--review-desc Text is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+        .profile-tabs-my-room--content.review-rev
+            .profile-not-have-rev
+                h4.rating-area-tab-title Sie haben noch niemanden bewertet
+                p.rating-area-tab-desc Um eine Bewertung abzugeben, besuchen Sie die Seite des Verkäufers. Seine Sie ehrlich. Die Verwaltung unserer Website überprüft alle Bewertungen und blockiert Sie, falls Sie die Bewertung absichtlich unterschätzen oder Umgekehrt positive Bewertungen betrügen.
+            ul.reviews-rating-area-list.reviews-have-rev
+                li.reviews-rating-area-item
+                    img.reviews-rating-area-item__logo(src="static/img/general/seller.png")
+                    .reviews-rating-area-item__info
+                        .reviews-rating-area-item__info--name--wrap
+                            span.reviews-rating-area-item__info--name Владислав Афонин
+                            span.reviews-rating-area-item__info--name--date 23.02.2019
+                        span.reviews-rating-area-item__info--review.good-review За объявление
+                            span горный велосипед в отличном состоянии ...
+                        .reviews-rating-area-item__info--review-desc-wrap.good-review-border
+                            p.reviews-rating-area-item__info--review-desc Текст - это просто фиктивный текст индустрии печати и набора текста. Лорем Ипсум был стандартным манекенщиком в отрасли с 1500-х годов, когда неизвестный принтер взял набор шрифтов и скремблировал его, чтобы сделать книгу типовых образцов.
+
+                li.reviews-rating-area-item
+                    img.reviews-rating-area-item__logo(src="static/img/general/none.png")
+                    .reviews-rating-area-item__info
+                        .reviews-rating-area-item__info--name--wrap
+                            span.reviews-rating-area-item__info--name Николай Андерсон
+                            span.reviews-rating-area-item__info--name--date 23.02.2019
+                        span.reviews-rating-area-item__info--review.bad-review За объявление
+                            span горный велосипед в отличном состоянии ...
+                        .reviews-rating-area-item__info--review-desc-wrap.bad-review-border
+                            p.reviews-rating-area-item__info--review-desc Текст - это просто фиктивный текст индустрии печати и набора текста. Лорем Ипсум был стандартным манекенщиком в отрасли с 1500-х годов, когда неизвестный принтер взял набор шрифтов и скремблировал его, чтобы сделать книгу типовых образцов.
+        .profile-tabs-my-room--content.review-waiting
+            p.rating-area-tab-desc2 Dieser Abschnitt zeigt die Verkäufer an, mit denen Sie in letzter Zeit kontaktiert haben
+            ul.rating-waiting-rating-people--list
+                li.rating-waiting-rating-people--item
+                    img.rating-waiting-rating-people--item__img(src="static/img/general/seller.png")
+                    .rating-waiting-rating-people--info
+                        span.rating-waiting-rating-people--info__name Alexander Gauland
+                        .rating-waiting-rating-people--info-get-review.willhaben-button Feedback geben
+                li.rating-waiting-rating-people--item
+                    img.rating-waiting-rating-people--item__img(src="static/img/general/none.png")
+                    .rating-waiting-rating-people--info
+                        span.rating-waiting-rating-people--info__name Alexander Gauland
+                        .rating-waiting-rating-people--info-get-review.willhaben-button Feedback geben
+                li.rating-waiting-rating-people--item
+                    img.rating-waiting-rating-people--item__img(src="static/img/general/seller.png")
+                    .rating-waiting-rating-people--info
+                        span.rating-waiting-rating-people--info__name Alexander Gauland
+                        .rating-waiting-rating-people--info-get-review.willhaben-button Feedback geben

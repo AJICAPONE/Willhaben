@@ -1,0 +1,239 @@
+section.profile
+    .container
+        h4.section-title.profile-my-room Anzeige aufgeben
+        .col-xl-8.advert-category--wrap.profile-my-room--wrap
+            form.advert-category--form
+                .advert-select-category
+                    span.catalog-size-title Wählen Sie eine Kategorie
+                    .advert-select-inputs.d-flex
+                        .col-xl-6.p-0.pr-3
+                            .d-flex.flex-column
+                                // Выберите категорию
+                                .advert-types
+                                    select.test
+                                        option(value="Транспорт") Auto & Motor
+                                        option(value="Недвижимость") Недвижимость
+                                        option(value="Животные") Животные
+                                .advert-types
+                                    select.test
+                                        option(value="Транспорт") Auto & Motor
+                                        option(value="Недвижимость") Недвижимость2
+                                        option(value="Животные") Животные2
+                        .col-xl-6.p-0.pl-3
+                            .d-flex.flex-column
+                                // Класификация автомобилей
+                                .advert-types
+                                    select.test
+                                        option(value="Легковые") Auto
+                                        option(value="Грузовые") Грузовые автомобили
+                                        option(value="Грузопассажирские") Грузопассажирские
+                                        option(value="Автобусы") Автобусы
+                                        option(value="Спецтранспорт") Спецтранспорт
+                                // Тип автомобиля
+                                .advert-types
+                                    select.test
+                                        option(value="Новый") Neu
+                                        option(value="СПробегом") Alt
+                                        option(value="Все") All
+                .advert-select-category
+                    span.catalog-size-title Tietel
+                    input.inputs(type="text" placeholder="Schreiben Sie etwas, z.B. Schwarzer Kia Spectra")
+                .advert-select-category
+                    span.catalog-size-title Beschreibung
+                    textarea.inputs.text-area-inputs(rows="6" maxlength="3000" placeholder="z.B.: Verkaufsgrund, Nichtraucherfahrzeug, Vignette, Serviceheft, Mängel, Besonderheiten wie nachträglich eingebautes Zubehör, ...")
+                .advert-select-category
+                    span.catalog-size-title Bilder
+                    .adretr-photo-load
+                        .adretr-photo-load-recom TIPP:
+                            span Mehrere Bilder von deinem Fahrzeug
+                        p.advert-photo-load-text (Vollansicht, Details, Innenraum, etc.) erhöhen deine Verkaufschancen.
+                    .adver-photo-load-input--wrap#advert-all-image
+                        .advert-wrap__all--img
+                            .advert-files-input
+                                +icon('don')
+                                input#files-upload(type="file" multiple)
+                .advert-select-category
+                    span.catalog-size-title Preis
+                    .col-xl-6.p-0.pr-3.d-flex.advert-price--wrap
+                        input.inputs(type="text" placeholder="21 000")
+                .advert-select-category
+                    span.catalog-size-title Verkaufsort
+                    .notice-inputs-place
+                        input.inputs.notice-inputs-platz(type="text" placeholder="Platz")
+                        input.inputs(type="text" placeholder="Ort")
+                    input.inputs(type="text" placeholder="Straße")
+                    h4.map-title-notice Auf der Karte finden
+                    .advert-map
+                        script(type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A766e8c04ec22eae7b17775ab69270ef43eb26981614a7f3ca338f34535a9c478&amp;width=700&amp;height=320&amp;lang=ru_RU&amp;scroll=true")
+                .advert-select-category
+                    span.catalog-size-title Fahrzeugdaten
+                    .notice-settings
+                        .col-xl-6.p-0.pr-3.advert-inputs-attr
+                            input.inputs(type="text" placeholder="VIN")
+                            input.inputs(type="text" placeholder="Baujahr")
+                            input.inputs(type="text" placeholder="Vorbesitzer")
+                            input.inputs(type="text" placeholder="Kilometerstand")
+                            select.test
+                                option(value="1") Treibstoff
+                                option(value="2") Treibstoff
+                                option(value="3") Treibstoff
+                            input.inputs(type="text" placeholder="Anzahl Türen")
+                            select.test
+                                option(value="1") Antrieb
+                                option(value="2") Antrieb
+                                option(value="3") Antrieb
+                        .col-xl-6.p-0.pr-3.advert-inputs-attr
+                            input.inputs(type="text" placeholder="Marke")
+                            input.inputs(type="text" placeholder="Modell")
+                            select.test
+                                option(value="1") Zustand
+                                option(value="2") Zustand
+                                option(value="3") Zustand
+                            input.inputs(type="text" placeholder="Leistung in kW")
+                            select.test
+                                option(value="1") Getriebeart
+                                option(value="2") Getriebeart
+                                option(value="3") Getriebeart
+                            input.inputs(type="text" placeholder="Anzahl Sitze")
+                            .notice-check-wrap
+                                .notice-check-pick
+                                    input#notice_picks(type="checkbox")
+                                    label(for="notice_picks")
+                                    span § 57a "Pickerl"
+                                .notice-check-gar
+                                    input#notice_gar(type="checkbox")
+                                    label(for="notice_gar")
+                                    span Garantie
+                        //input.advert-checked-block-check#advert-check-crash(type="checkbox")
+                        //.advert-checked-block
+                        //    span.advert-crash.uncheck Битый
+                        //    span.advert-good На ходу
+                .advert-select-category
+                    span.catalog-size-title.advert-small-title Fahrbe
+                    .advert-color-choise
+                        label
+                            span.advert-color-name.advert-border-f2f2f2 Weiß
+                            input.advert-color-check(type="radio" name="color")
+                            .advert-color-choise-checked.advert-FFFFFF
+                        label
+                            span.advert-color-name.advert-border-c7c7c7 Grau
+                            input.advert-color-check(type="radio" name="color")
+                            .advert-color-choise-checked.advert-C7C7C7
+                        label
+                            span.advert-color-name.advert-border-f2e2ca Burgunder
+                            input.advert-color-check(type="radio" name="color")
+                            .advert-color-choise-checked.advert-F2E2CA
+                        label
+                            span.advert-color-name.advert-border-FFEA2F Gelb
+                            input.advert-color-check(type="radio" name="color")
+                            .advert-color-choise-checked.advert-FFEA2F
+                        label
+                            span.advert-color-name.advert-border-FFB82F Orange
+                            input.advert-color-check(type="radio" name="color")
+                            .advert-color-choise-checked.advert-FFB82F
+                        label
+                            span.advert-color-name.advert-border-FF2F2F Rot
+                            input.advert-color-check(type="radio" name="color")
+                            .advert-color-choise-checked.advert-FF2F2F
+                        label
+                            span.advert-color-name.advert-border-11D200 Grün
+                            input.advert-color-check(type="radio" name="color")
+                            .advert-color-choise-checked.advert-11D200
+                        label
+                            span.advert-color-name.advert-border-2FB4FF Blau
+                            input.advert-color-check(type="radio" name="color")
+                            .advert-color-choise-checked.advert-2FB4FF
+                        label
+                            span.advert-color-name.advert-border-332FFF Blau
+                            input.advert-color-check(type="radio" name="color")
+                            .advert-color-choise-checked.advert-332FFF
+                        label
+                            span.advert-color-name.advert-border-A32FFF Dunkelviolett
+                            input.advert-color-check(type="radio" name="color")
+                            .advert-color-choise-checked.advert-A32FFF
+                        label
+                            span.advert-color-name.advert-border-E22FFF Lila
+                            input.advert-color-check(type="radio" name="color")
+                            .advert-color-choise-checked.advert-E22FFF
+                        label
+                            span.advert-color-name.advert-border-FF88F3 Pink
+                            input.advert-color-check(type="radio" name="color")
+                            .advert-color-choise-checked.advert-FF88F3
+                        label
+                            span.advert-color-name.advert-border-000000 schwarz
+                            input.advert-color-check(type="radio" name="color")
+                            .advert-color-choise-checked.advert-000000
+                .advert-select-category
+                    span.catalog-size-title.advert-small-title Kontakt
+                    .advert-to-choise
+                        label
+                            input.advert-to-check(type="radio" name="to")
+                            .advert-to-choise-checked.advert-choise-all-kon.checked
+                            span Telefon und E-Mail-Adresse
+                        label
+                            input.advert-to-check(type="radio" name="to")
+                            .advert-to-choise-checked.advert-choise-phones
+                            span Nur Telefon
+                        label
+                            input.advert-to-check(type="radio" name="to")
+                            .advert-to-choise-checked.advert-choise-emails
+                            span Nur E-Mail-Adresse
+                    .advert-to-choise
+                        .col-xl-6.p-0.pr-3
+                            input.inputs.advert-to-choise-inputs.advert-to-choise-phone(type="text" placeholder="Geben Sie Ihre Telefonnummer ein")
+                        .col-xl-6.p-0
+                            input.inputs.advert-to-choise-inputs.advert-to-choise-email(type="text" placeholder="meinbriefkasten@yandex.ru")
+                            label.advert-to-choise-email-label Ihre E-Mail-Adresse können Sie in Ihrem Profil ändern.
+                    .col-xl-6.p-0.pr-3
+                        input.advert-checked-block-check#advert-check-pos(type="checkbox")
+                        .advert-checked-block
+                            span.advert-sob.uncheck Privat
+                            span.advert-pos Händler
+                .advert-select-category
+                    span.catalog-size-title Einfach die beste Veröffentlichungsoption für Sie wählen:
+                    .advert-method--lists
+                        .advert-method-items
+                            .advert-wrappers
+                                .advert-icon-wrap.adver-icon-blue
+                                    +icon('iok')
+                                .advert-stand--info
+                                    .advert-stand-free
+                                        span Standart
+                                        p Kostenlos
+                                    p.advert-stand--info--text Die Anzeige wird nur einmal oben auf der Liste platziert
+                            input.advert-button-choise-input(type="radio" name="service_luba")
+                            .willhaben-button.advert-button-choise Anzeige aufgeben
+                        .advert-method-items
+                            .advert-wrappers
+                                .advert-icon-wrap.adver-icon-yellow
+                                    +icon('vip')
+                                .advert-stand--info
+                                    .advert-stand-free
+                                        span VIP
+                                        p 10 €
+                                    p.advert-stand--info--text Die Anzeige wird ganz nach vorne gereiht.
+                            input.advert-button-choise-input(type="radio" name="service_luba")
+                            .willhaben-button.advert-button-choise Anzeige aufgeben
+                        .advert-method-items
+                            .advert-wrappers
+                                .advert-icon-wrap.adver-icon-green
+                                    +icon('promo')
+                                .advert-stand--info
+                                    .advert-stand-free
+                                        span Promoblock
+                                        p 20 €
+                                    p.advert-stand--info--text Durch die Platzierung in einem Promoblock wird die Anzeige zum Blickfang in der Suche.
+                            input.advert-button-choise-input(type="radio" name="service_luba")
+                            .willhaben-button.advert-button-choise Anzeige aufgeben
+                        .advert-method-items
+                            .advert-wrappers
+                                .advert-icon-wrap.adver-icon-red
+                                    +icon('clock')
+                                .advert-stand--info
+                                    .advert-stand-free
+                                        span Turbo
+                                        p 30 €
+                                    p.advert-stand--info--text Die Anzeige wird ganz nach vorne gereiht und in einem Promoblock platziert
+                            input.advert-button-choise-input(type="radio" name="service_luba")
+                            .willhaben-button.advert-button-choise.uncheck Anzeige aufgeben
+                button.willhaben-button.advert-button-submit(type="submit") Anzeige aufgeben

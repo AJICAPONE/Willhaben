@@ -1,0 +1,45 @@
+.profile-my-room-tab
+    h4.profile-tab-title Konto
+    .profile-tabs-my-room
+        .profile-tabs-my-room-tab.active(data-area="pay-add") Konto auffüllen
+        .profile-tabs-my-room-tab(data-area="pay-history") Geschichte
+    .profile-tabs-my-room--content-wrapper
+        .profile-tabs-my-room--content.pay-add.active
+            h4.purce-balanse-rep Summe
+            .purce-balance-inputs
+                input.inputs(type="text" value="1500")
+                .purce-wallet
+                    select.test
+                        option(value="€") €
+                        option(value="$") $
+            h4.purce-balanse-rep.purce-balanse-variant Bezahlen mit
+            .purce-all-wallet-list--wrap
+                ul.purce-all-wallet-list
+                    li.purce-all-wallet-item
+                        a.purce-wallet__link(href="/")
+                            img.purce-wallet__img(src="static/img/general/mk.png")
+                    li.purce-all-wallet-item
+                        a.purce-wallet__link(href="/")
+                            img.purce-wallet__img.wallet-bank(src="static/img/general/visa.png")
+                    li.purce-all-wallet-item
+                        a.purce-wallet__link(href="/")
+                            img.purce-wallet__img.wallet-bank(src="static/img/general/su.png")
+                    li.purce-all-wallet-item
+                        a.purce-wallet__link(href="/")
+                            img.purce-wallet__img.wallet-yandex(src="static/img/general/eps.png")
+                    li.purce-all-wallet-item
+                        a.purce-wallet__link(href="/")
+                            img.purce-wallet__img(src="static/img/general/pp.png")
+
+        .profile-tabs-my-room--content.pay-history
+            h4.rating-area-tab-title3 Sie haben noch keine Operationen durchgeführt
+            // Скрыйтый case Purce-balance
+            ul.purce-balance-list.purce-balance-list-hide
+                li.purce-balance-item
+                    img.purce-balance-img(src="static/img/general/plus.png")
+                    span.purce-balance-text Kontoauffüllung in Höhe von
+                        span.purce-balance-text2 200 €
+                li.purce-balance-item
+                    img.purce-balance-img(src="static/img/general/minus.png")
+                    span.purce-balance-text Kontoauffüllung in Höhe von
+                        span.purce-balance-text2 200 €

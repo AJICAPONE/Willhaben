@@ -1,0 +1,95 @@
+.profile-my-room-tab
+    h4.profile-tab-title Einstellungen
+    .settings-wrap
+        .setting-load-image
+            img.settings__image(src="static/img/general/seller.png" id="imgshow")
+            input(type="file" id="imgload")
+            span.change-image Ändern
+        .settings-profile--info
+            .setting-profile--info__name
+                .setting-name-input#profile-name Einstellungen
+                .setting-profile--info__name-change#change-name
+                    +icon('red')
+                input.setting-profile--info--input.inputs#profile-name-input(type="text")
+            .setting-profile--info__name
+                .setting-town-input#profile-town Wien
+                .setting-profile--info__name-change#change-town
+                    +icon('red')
+                input.setting-profile--info--input.inputs#profile-town-input(type="text")
+
+            .setting-profile--info__name
+                .setting-raion-input#profile-rajon Wagramer Straße, 25
+                .setting-profile--info__name-change#change-rajon
+                    +icon('red')
+                input.setting-profile--info--input.inputs#profile-rajon-input(type="text")
+
+    ul.settings-profile-list
+        li.settings-profile-items
+            span.col-xl-4.settings-profile--items-name Telefon
+            span.col-xl-4.settings-profile--items-option +7 912 000-84-42
+            span.col-xl-4.settings-profile--items-change Ändern
+        li.settings-profile-items
+            span.col-xl-4.settings-profile--items-name E-mail
+            span.col-xl-4.settings-profile--items-option test.email@gmail.com
+            span.col-xl-4.settings-profile--items-change Ändern
+        li.settings-profile-items
+            span.col-xl-4.settings-profile--items-name Lieferung
+            .col-xl-4.settings-profile--items-change
+                input.settings-profile--items-change-check(type="checkbox")
+                .settings-profile--items-change-checked
+        li.settings-profile-items
+            span.col-xl-4.settings-profile--items-name Automatische Erkennung von kostenpflichtigen Diensten
+            .col-xl-4.settings-profile--items-change
+                input.settings-profile--items-change-check(type="checkbox")
+                .settings-profile--items-change-checked
+        li.settings-profile-items.profile-email-notific-settings
+            span.col-xl-4.settings-profile--items-name E-mail-Nachrichten
+            .settings-profile-email-notific
+                .col-xl-8.settings-profile-email-service
+                    span.settings-profile-email-service--name Entgeldliche Dienste
+                    p.settings-profile-email-service--desc Status der angeschlossen Dienste ändern
+                .col-xl-4.settings-profile--items-change
+                    input.settings-profile--items-change-check(type="checkbox")
+                    .settings-profile--items-change-checked
+            .settings-profile-email-notific
+                .col-xl-8.settings-profile-email-service
+                    span.settings-profile-email-service--name Nachrichten
+                    p.settings-profile-email-service--desc Benachrichtigungen über neue Nachrichten
+                .col-xl-4.settings-profile--items-change
+                    input.settings-profile--items-change-check(type="checkbox")
+                    .settings-profile--items-change-checked
+            .settings-profile-email-notific
+                .col-xl-8.settings-profile-email-service
+                    span.settings-profile-email-service--name Sonderangebote
+                    p.settings-profile-email-service--desc Individuelle rabatte und sonderangebote
+                .col-xl-4.settings-profile--items-change
+                    input.settings-profile--items-change-check(type="checkbox")
+                    .settings-profile--items-change-checked
+            .settings-profile-email-notific
+                .col-xl-8.settings-profile-email-service
+                    span.settings-profile-email-service--name Neuigkeiten
+                    p.settings-profile-email-service--desc Aktuelle Infos und neue Möglichkeiten
+                .col-xl-4.settings-profile--items-change
+                    input.settings-profile--items-change-check(type="checkbox")
+                    .settings-profile--items-change-checked
+            .settings-profile-email-notific
+                .col-xl-8.settings-profile-email-service
+                    span.settings-profile-email-service--name Persönliche Sammlungen
+                    p.settings-profile-email-service--desc Sammlungen von Anzeigen und Kategorien von Interesse
+                .col-xl-4.settings-profile--items-change
+                    input.settings-profile--items-change-check(type="checkbox")
+                    .settings-profile--items-change-checked
+            .settings-profile-email-notific
+                .col-xl-8.settings-profile-email-service
+                    span.settings-profile-email-service--name Forschungsbeteiligung
+                    p.settings-profile-email-service--desc Ihre Antworten helfen uns unseren Service zu verbessern
+                .col-xl-4.settings-profile--items-change
+                    input.settings-profile--items-change-check(type="checkbox")
+                    .settings-profile--items-change-checked
+            .settings-profile-email-notific
+                .col-xl-8.settings-profile-email-service
+                    span.settings-profile-email-service--name Tipps
+                    p.settings-profile-email-service--desc Empfehlungen für eine effektive Arbeit mit der Website
+                .col-xl-4.settings-profile--items-change
+                    input.settings-profile--items-change-check(type="checkbox")
+                    .settings-profile--items-change-checked

@@ -1,0 +1,30 @@
+#popup-login.modal.fade(tabindex='-1', role='dialog', aria-labelledby='popup-title', aria-hidden='true')
+    .modal-dialog.modal-dialog-centered.popup-modal--wrap(role='document')
+        .modal-content.luba-login-popup
+            .modal-header
+                .popup-login-title-wrap
+                    h5#popup-title.modal-title Einloggen
+                    p Um fortzufahren müssen Sie eingeloggt sein
+                button.close.popup-cancel(type='button', data-dismiss='modal', aria-label='Close')
+                    +icon('cancel')
+            .modal-body
+                form.popup-login-form
+                    .popup-login-form-email-wrapper
+                        label E-mail
+                        input#popup-login-email.popup-inputs(type="email")
+                    .popup-pass--wrap
+                        .popup-login-form-email-wrapper
+                                label Passwort
+                                .popup-pass-show-pass
+                                    input#popup-login-pass.popup-inputs.show-password(type="password" psswd-shown="false")
+                                    +icon('pass')
+                    .remember-pass--wrap
+                        .index-checkbox-search
+                            input.input-search-photo-agree#remember-pass(type="checkbox")
+                            label(for="remember-pass")
+                            span Eingeloggt bleiben
+                        a.restore-pass(data-dismiss='modal' data-toggle='modal', data-target='#popup-forgot') Passwort vergessen?
+                    button.willhaben-button.popup-button-login(type="submit") Einloggen
+            .modal-footer.modal-footer-border
+                .popup-register--link.willhaben-button(data-dismiss='modal' data-toggle='modal', data-target='#popup-register') Registrieren
+                p Wenn Sie sich anmelden, Stimmen Sie den Nutzungsbedingungen und der Datenschutzrichtlinie zu.

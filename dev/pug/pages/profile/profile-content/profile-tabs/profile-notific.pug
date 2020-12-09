@@ -1,0 +1,21 @@
+.profile-my-room-tab
+    h4.profile-tab-title Benachrichtigungen
+    .profile-tabs-my-room--content-wrapper
+        .profile-tabs-my-room--content2
+            h4.rating-area-tab-title2 У вас пока нет рейтинга
+            // Скрыйтый case Notification
+            ul.notification-all--list.notification-hide
+                li.notification-all--item
+                    .notific-button-delete
+                        +icon('cancel')
+                    img.notification-all--item__img(src="static/img/general/seller.png")
+                    .notification-all--item__name--wrap
+                        span.notification-all--item__name Katarina Neuer hat Ihre Anzeige
+                            span.notification-all--item__name2 Fahrrad
+                                a.notification-all--item__link(href="/") in das Auserwählte hunzugefügt
+                li.notification-all--item
+                    img.notification-all--item__img(src="static/img/general/seller.png")
+                    .notification-all--item__name--wrap
+                        span.notification-all--item__name Ihre Anzeige
+                            span.notification-all--item__name2 Fahrrad
+                                a.notification-all--item__link(href="/") ist nicht mehr aktiv. Grund: die Frist der Veröffentlichung nach dem Tarif „Standard“ ist abgelaufen

@@ -1,0 +1,375 @@
+@import 'utils/fonts.styl'
+@import 'utils/vars.styl'
+@import 'utils/mixins.styl'
+@import 'libs.styl'
+
+
+@import "pages/advert/advert.styl"
+
+@import "pages/categ/categ.styl"
+
+@import "pages/profile/profile.styl"
+
+@import "pages/notice/notice.styl"
+
+
+html
+	font-size 14px
+	height 100%
+	line-height 1.3
+
+body
+	font-family OSSB,sans-serif
+	height 100%
+
+h1,h2,h3,h4,h5,h6
+	margin 0
+	font-family OSSB,sans-serif
+
+ul,li
+	list-style-type none
+	margin 0
+	padding 0
+
+p
+	margin 0
+
+a
+	color black
+	text-decoration none !important
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video
+	vertical-align middle
+
+textarea
+	resize none
+
+section
+	position relative
+	padding-top 35px
+
+input,
+select,
+button
+	outline none
+
+*, *:before, *:after
+	box-sizing border-box
+
+.wrapper
+	display flex
+	flex-direction column
+	height 100%
+
+.content
+	flex 1 0 auto
+	background-color #f9f9f9
+
+
+//Модули
+@import "modules/modules.styl"
+
+// СТРАНИЦЫ
+// Главная страница
+@import 'pages/index/index.styl'
+
+
+
+@media screen and (max-width: 992px)
+	.header-search-content
+		flex-direction column
+	.header-search
+		flex-direction column
+		.selectCF
+			margin-bottom 16px
+	.header-search .selectCF
+		max-width 100%
+	.header-category-button
+		margin-left 0
+		border-right 1.5px solid #adadad;
+		border-radius 6px
+		margin-bottom 16px
+	.header-search .inputs
+		margin-left 0
+		border-right 1.5px solid #adadad;
+		border-radius 6px
+		margin-bottom 16px
+	.header-search__button
+		border-left 1.5px solid #adadad;
+		border-radius 6px
+		max-width 100%
+		margin-bottom 16px
+	.header-search__only-logo
+		justify-content flex-start
+		padding-left 0
+	.header-content
+		display none
+	.header-areas-item
+		margin-right 20px
+	.all-adverts--list
+		margin-right 24px
+	.catalog-items--item
+		flex-basis: calc(35% - 28px);
+
+	.categories-all-wrap-ul
+		width 31%
+		margin-right 10px
+	.mobile-header-content
+		display flex
+	.footer-main-wrap
+		flex-direction column
+	.footer-width
+		max-width 100%
+		justify-content center
+		align-items: center
+		margin-bottom 16px
+
+	.footer-social--title
+		justify-content center
+	.mobile-fixed-menus
+		display block
+	.popup-header-my-items--item--title
+		padding-left 0
+	.header-main-contents-region
+		display block
+	.categ-wrapper
+		flex-direction column
+	.sidebar-catalog
+		margin-bottom 30px
+	.advert-main--info
+		flex-direction column
+	.adverts-padding-left
+		max-width 100%
+		padding-right 0
+		margin-bottom 30px
+	.advert-info__case
+		max-width 100%
+		padding 0
+	.breadcrumbs-items
+		width max-content
+	.profile-my-room--wrap
+		flex-direction column
+
+
+
+@media screen and (max-width: 768px)
+	.header-search-content
+		display none
+	.header-areas-list
+		display none
+	.all-adverts
+		display none
+	.mobile-small-search
+		display block
+	.catalog-items--item
+		flex-basis: calc(52% - 28px);
+	.categories-all-wrap-ul
+		width 48%
+	.popup-menu-catalog
+		display none
+	.popup-menu-catalog-wrapper
+		flex-direction column
+	.section-title
+		font-size 20px
+	.modal-header
+		padding 12px
+	.modal-body
+		padding 12px
+	.modal-footer
+		padding 12px
+	.categ-filter-items .catalog-items--item
+		flex-basis: calc(52% - 28px);
+	.breadcrumbs-items
+		width max-content
+	.breadcrumbs
+		overflow-x scroll
+	.sidebar-catalog
+		padding-top 20px
+	.advert-slider-img-slick
+		max-width 100%
+		margin-right 0
+	.header-region-choise
+		padding-left 0
+	.logo-wrap .icon
+		width 88px
+		height 20px
+	.auth-profile__logo
+		margin-left 15px
+	.setting-raion-input
+		font-size 15px
+	.setting-town-input
+		font-size 16px
+	.setting-name-input
+		font-size 16px
+	.profile-tabs-my-room--content
+		margin-right 0
+	.message-area-all-item-check-check, .message-area-all-item-check-check2
+		flex-shrink 0
+	.profile-tabs-my-room
+		overflow-x scroll
+	.profile-tabs-my-room-tab
+		width max-content
+		white-space nowrap
+	.profile-tabs-my-room--content2
+		margin-right 0
+	.advert-color-choise
+		flex-flow wrap
+	.advert-color-choise label
+		margin-bottom 20px
+	.advert-to-choise span
+		font-size 12px
+	.notice-check-wrap
+		width 100%
+		font-size 12px
+	.advert-price--wrap
+		padding-right 0 !important
+
+
+
+@media screen and (max-width: 576px)
+	.catalog-items--item
+		flex-basis: calc(53% - 20px);
+	.categories-all-wrap-ul
+		width 100%
+	.catalog-items--item__img
+		max-height 310px
+	.mobile-icons-head .icon
+		size(30px)
+
+	.mobile-logo .icon
+		width: 83px;
+		height: 22px;
+	.popup-modal--wrap
+		margin 0
+		height 100%
+	.luba-login-popup
+		border-radius 0
+		height 100%
+		overflow-y scroll
+	.categ-filter-items .catalog-items--item
+		flex-basis: calc(100% - 28px);
+	.catalog-sort-wrap
+		flex-direction column
+	.catalog-sort-sort
+		margin-bottom 16px
+	.settings-wrap
+		flex-direction column
+		justify-content center
+		align-items center
+	.setting-load-image
+		margin-bottom 15px
+	.settings-profile--items-name
+		font-size 12px
+		padding 0
+	.settings-profile--items-option
+		font-size 12px
+		word-break break-all
+	.settings-profile--items-change
+		padding 0
+	.settings-profile-email-service--name
+		font-size 14px
+	.settings-profile-email-service--desc
+		font-size 12px
+	.settings-profile-email-service
+		padding 0
+	.purce-all-wallet-list
+		flex-flow wrap
+	.message-area-all-item--wrapper
+		flex-direction column
+	.message-area-all-item
+		flex-direction column
+	.message-area-all-item
+		max-height 100%
+	.message-area-all-item-checkbox
+		margin-right 0
+	.message-area-all-item__img
+		width 100%
+		height auto
+		max-height 403px
+	.message-area-all-item__info
+		padding 10px
+	.controls-message
+		flex-flow wrap
+	.index-checkbox-search
+		margin-bottom 10px
+	.message-area-all-item--wrapper
+		position relative
+	.message-area-all-item-check-check
+		position absolute
+		left 10px
+		top 10px
+		z-index 20
+	.profile-tabs-my-room--content__item
+		flex-direction column
+		max-height 100%
+	.profile-tabs-my-room--content__item-img
+		width 100%
+		max-height 403px
+	.profile-tabs-my-room--content__item--info
+		padding 10px
+	.auth-profile-info
+		display none
+	.select-input
+		font-size 12px
+	.select-options
+		font-size 12px
+	.advert-select-inputs
+		flex-direction column
+	.advert-select-inputs .col-xl-6
+		padding-left 0 !important
+		padding-right 0 !important
+	.inputs
+		font-size 12px
+	.adretr-photo-load
+		font-size 12px
+	.advert-files-input .icon
+		size(55px)
+	.advert-files-input
+		size(55px)
+	.advert-wrap--img
+		size(55px)
+	.notice-settings
+		flex-direction column
+	.advert-inputs-attr
+		padding-right 0 !important
+	.advert-color-choise label
+		margin-right 25px
+	.advert-to-choise
+		flex-direction column
+		.col-xl-6
+			padding-right 0 !important
+			margin-bottom 10px
+	.advert-select-category
+		.col-xl-6
+			padding-right 0 !important
+	.advert-select-category .catalog-size-title
+		font-size 14px
+	.advert-method-items
+		padding 20px
+	.advert-wrappers
+		flex-direction column
+	.advert-stand--info--text
+		font-size 12px
+	.advert-icon-wrap
+		margin-bottom 15px
+	.advert-stand--info
+		width 100%
+
+
+
+@media screen and (max-width: 470px)
+	.catalog-items--list
+		justify-content center
+	.catalog-items--item
+		flex-basis: calc(100% - 28px);
+	.catalog-items--item__img
+		max-height: 403px;
+
+
+
+

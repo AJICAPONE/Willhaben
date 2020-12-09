@@ -1,0 +1,18 @@
+#popup-agree-phone.modal.fade(tabindex='-1', role='dialog', aria-labelledby='popup-title4', aria-hidden='true')
+    .modal-dialog.modal-dialog-centered.popup-modal--wrap(role='document')
+        .modal-content.luba-login-popup
+            .modal-header
+                .popup-login-title-wrap
+                    h5#popup-title4.modal-title Telefon bestätigen
+                    p an die angegebene Telefonnummer wird eine SMS mit einem Bestätigungscode gesendet
+                button.close.popup-cancel(type='button', data-dismiss='modal', aria-label='Close')
+                    +icon('cancel')
+            .modal-body
+                form.popup-login-form
+                    .popup-login-form-email-wrapper
+                        label Code eingeben
+                        input#popup-mobile-num2.popup-inputs(type="text")
+            .modal-footer.modal-footer-padding
+                .popup-register-back(data-dismiss='modal' data-toggle='modal', data-target='#popup-mobiles') Zurück
+                    +icon('icon-back')
+                .willhaben-button.popup-button-login(data-dismiss='modal' data-toggle='modal', data-target='#popup-registered') Weiter

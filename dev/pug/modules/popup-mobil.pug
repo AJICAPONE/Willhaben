@@ -1,0 +1,19 @@
+#popup-mobiles.modal.fade(tabindex='-1', role='dialog', aria-labelledby='popup-title3', aria-hidden='true')
+    .modal-dialog.modal-dialog-centered.popup-modal--wrap(role='document')
+        .modal-content.luba-login-popup
+            .modal-header
+                .popup-login-title-wrap
+                    h5#popup-title3.modal-title Telefon anbinden
+                    a.modal-popup-reg(data-dismiss='modal' data-toggle='modal', data-target='#popup-login') einloggen,
+                        p oder als bestehender User
+                button.close.popup-cancel(type='button', data-dismiss='modal', aria-label='Close')
+                    +icon('cancel')
+            .modal-body
+                form.popup-login-form
+                    .popup-login-form-email-wrapper
+                        label Telefonnummer eingeben
+                        input#popup-mobile-num.popup-inputs.mask-field(type="phone")
+            .modal-footer.modal-footer-padding
+                .popup-register-back(data-dismiss='modal' data-toggle='modal', data-target='#popup-register') Zurück
+                    +icon('icon-back')
+                .willhaben-button.popup-button-login(data-dismiss='modal' data-toggle='modal', data-target='#popup-agree-phone') Weiter

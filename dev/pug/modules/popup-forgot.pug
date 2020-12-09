@@ -1,0 +1,18 @@
+#popup-forgot.modal.fade(tabindex='-1', role='dialog', aria-labelledby='popup-title5', aria-hidden='true')
+    .modal-dialog.modal-dialog-centered.popup-modal--wrap(role='document')
+        .modal-content.luba-login-popup
+            .modal-header
+                .popup-login-title-wrap
+                    h5#popup-title5.modal-title Passwort vergessen
+                    p Bitte gib hier deine E-Mail-Adresse ein, mit der du bei SiteName registriert bist. An diese E-Mail-Adresse senden wir den Link zum Ändern des Passworts.
+                button.close.popup-cancel(type='button', data-dismiss='modal', aria-label='Close')
+                    +icon('cancel')
+            .modal-body
+                form.popup-login-form
+                    .popup-login-form-email-wrapper
+                        label E-Mail-Adresse
+                        input#popup-forgot-email.popup-inputs(type="email")
+                    button.willhaben-button.popup-button-login(type="submit") Änderungslink anfordern
+            .modal-footer.modal-footer-border
+                p Noch kein SiteName-User?
+                .popup-register--link.willhaben-button.forgot-pass-reg(data-dismiss='modal' data-toggle='modal', data-target='#popup-forgot-email') Registrieren

@@ -1,0 +1,12 @@
+#popup-registered.modal.fade(tabindex='-1', role='dialog', aria-labelledby='popup-title5', aria-hidden='true')
+    .modal-dialog.modal-dialog-centered.popup-modal--wrap(role='document')
+        .modal-content.luba-login-popup
+            .modal-header
+                .popup-login-title-wrap
+                    h5#popup-title5.modal-title Sie sind erfolgreich registriert!
+                    p Es bleibt übrig, die E-Mail-Adresse zu bestätigen und Ihre erste Anzeige zu veröffentlichen!
+                button.close.popup-cancel(type='button', data-dismiss='modal', aria-label='Close')
+                    +icon('cancel')
+            .modal-body
+            .modal-footer.registered-footer.modal-footer-padding
+                a.willhaben-button.popup-button-login(href="/") Anzeige aufgeben

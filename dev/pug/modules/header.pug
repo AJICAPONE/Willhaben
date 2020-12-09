@@ -1,0 +1,235 @@
+header
+    .header-wrap
+        .container.header-container
+            .mobile-header-content
+                .mobile-login.mobile-icons-head(data-toggle="modal" data-target="#popup-login")
+                    +icon('icon-login')
+                .mobile-login-active
+                    a(href="/")
+                        img.mobile-login-active__img(src="static/img/general/seller.png")
+                .mobile-logo
+                    +icon('logo')
+                .mobile-sandwich.mobile-icons-head
+                    +icon('icon-menu')
+            .col-12.col-sm-12.col-md-12.header-main-contents-region
+                .header-mobile-choise-region
+                    .header-mobile-choise-region-text
+                        span Регион:
+                        span.mobile-region-choise Wien
+                    a.header-light-font-blue(href="/") Region ändern
+            .col-xl-12.mobile-small-search
+                form.mobile-serach-form
+                    input.mobile-search-input(type="text" placeholder="Введите текст объявления")
+                    button.mobile-search-button(type="sumbit")
+                        +icon('search')
+                .mobile-category-filters
+                    .mobile-category.mobile-buttons-mobile
+                        +icon('icon-categories')
+                        span Kategorie
+            .header-content
+                .col-md-5.col-lg-5.col-xl-5.header-advert-region
+                    a.col-xl-7.willhaben-button(href="/") Anzeige aufgeben
+                    .col-xl-5.header-region-choise
+                        span Wien
+                        a(href="/") Region ändern
+                .col-md-7.col-lg-7.col-xl-7.header-logo-register
+                    .logo-wrap
+                        +icon('logo')
+                    .header-login-reg(data-toggle='modal', data-target='#popup-login') Einloggen | Registrieren
+                    .header-2-block.auth-profile
+                        .auth-profile-info
+                            span Alexander Voss
+                            a(href="/") Mein Profil
+                        img.auth-profile__logo(src="static/img/general/seller.png")
+            include ../modules/menu
+            form.header-search-content
+                .col-lg-9.col-xl-10.header-search
+                    select.test
+                        option(value="Вена") Wien
+                        option(value="Москва") Moskow
+                        option(value="СанктПитербург") Санкт-Питербург
+                    .header-search-and-category
+                        .header-category-button
+                            +icon('catalog')
+                            span Kategorie
+                    input.inputs(type="text" placeholder="Was suchen Sie?")
+                    button.header-search__button(type="submit")
+                        +icon('search')
+                        span Finden
+                .col-lg-3.col-xl-2.header-search__only-logo
+                    input#only_photo(type="checkbox")
+                    label(for="only_photo")
+                    span Nur mit Foto
+    .popup-menu-catalog
+        .container
+            .popup-menu-catalog-wrapper
+                .col-xl-4.popup-menu-areas
+                    ul.popup-menu-catalog--list
+                        li.popup-menu-catalog--item.active
+                            a.popup-icon-pos(href="/")
+                                +icon('car2')
+                                span.popup-menu-catalog--item--span Auto & Motor
+                        li.popup-menu-catalog--item
+                            a.popup-icon-pos(href="/")
+                                +icon('home2')
+                                span.popup-menu-catalog--item--span Immobilien
+                        li.popup-menu-catalog--item
+                            a.popup-icon-pos(href="/")
+                                +icon('man2')
+                                span.popup-menu-catalog--item--span Jobs & Kariere
+                        li.popup-menu-catalog--item
+                            a.popup-icon-pos(href="/")
+                                +icon('uslug')
+                                span.popup-menu-catalog--item--span Dienstleistungen
+                        li.popup-menu-catalog--item
+                            a.popup-icon-pos(href="/")
+                                +icon('items')
+                                span.popup-menu-catalog--item--span Persönliche Sachen
+                        li.popup-menu-catalog--item
+                            a.popup-icon-pos(href="/")
+                                +icon('dog')
+                                span.popup-menu-catalog--item--span Tiere
+                        li.popup-menu-catalog--item
+                            a.popup-icon-pos(href="/")
+                                +icon('komp')
+                                span.popup-menu-catalog--item--span Elektronick
+                        li.popup-menu-catalog--item
+                            a.popup-icon-pos(href="/")
+                                +icon('curch')
+                                span.popup-menu-catalog--item--span Haushalt
+                        li.popup-menu-catalog--item
+                            a.popup-icon-pos(href="/")
+                                +icon('bal')
+                                span.popup-menu-catalog--item--span Sport, Hobby & Freizeit
+                        li.popup-menu-catalog--item
+                            a(href="/")
+                                +icon('dol')
+                                span.popup-menu-catalog--item--span Business
+                .col-xl-4.popup-menu-areas
+                    ul.popup-header-my-items--list2.active
+                        .popup-header-my-items--item--title Persönliche Sachen
+                        li.popup-header-my-items--item--level2.active
+                            a(href="/") Kleidung, Schuhe, Accessoires
+                        li.popup-header-my-items--item--level2
+                            a(href="/") Kleidung für Kinder
+                        li.popup-header-my-items--item--level2
+                            a(href="/") Spielzeug
+                        li.popup-header-my-items--item--level2
+                            a(href="/") Uhren & Schmuck
+                        li.popup-header-my-items--item--level2
+                            a(href="/") Beauty & Gesundheit
+                .col-xl-4.popup-menu-areas
+                    ul.popup-header-my-items--list3.active
+                        .popup-header-my-items--item--title Kleidung, Schuhe, Accessoires
+                        li.popup-header-my-items--item--level3
+                            a(href="/") Damenmode
+                        li.popup-header-my-items--item--level3
+                            a(href="/") Herrenmode
+                        li.popup-header-my-items--item--level3
+                            a(href="/") Schuhe
+                        li.popup-header-my-items--item--level3
+                            a(href="/") Taschen, Koffer
+                        li.popup-header-my-items--item--level3
+                            a(href="/") Kleidungpflege
+                        li.popup-header-my-items--item--level3
+                            a(href="/") Maskenball
+                        li.popup-header-my-items--item--level3
+                            a(href="/") Accessoires
+
+include ../modules/popup-login
+include ../modules/popup-forgot
+include ../modules/popup-register
+include ../modules/popup-mobil
+include ../modules/popup-agree-phone
+include ../modules/popup-registered
+
+.mobile-fixed-menus
+    .mobile-fixed-menus-icon
+        +icon('cancel')
+    .mobile-catalog-fixed--wrapper.mobile-list__links--wrap
+        a.mobile-catalog-menu-title(href="/") Zuhause
+        a.mobile-catalog-menu-title(href="/") Kategorien
+        a.mobile-catalog-menu-title(href="/") Eine Anzeige aufgeben
+        a.mobile-catalog-menu-title(href="/") Mein Profil
+        a.mobile-catalog-menu-title(href="/") Ausfahrt
+
+
+.mobile-popup-menu-catalog
+    .mobile-fixed-menus-icon
+        +icon('cancel')
+    .popup-menu-catalog-wrapper
+        .col-xl-4.popup-menu-areas
+            ul.popup-menu-catalog--list
+                li.popup-menu-catalog--item.active
+                    a.popup-icon-pos(href="/")
+                        +icon('car2')
+                        span.popup-menu-catalog--item--span Auto & Motor
+                li.popup-menu-catalog--item
+                    a.popup-icon-pos(href="/")
+                        +icon('home2')
+                        span.popup-menu-catalog--item--span Immobilien
+                li.popup-menu-catalog--item
+                    a.popup-icon-pos(href="/")
+                        +icon('man2')
+                        span.popup-menu-catalog--item--span Jobs & Kariere
+                li.popup-menu-catalog--item
+                    a.popup-icon-pos(href="/")
+                        +icon('uslug')
+                        span.popup-menu-catalog--item--span Dienstleistungen
+                li.popup-menu-catalog--item
+                    a.popup-icon-pos(href="/")
+                        +icon('items')
+                        span.popup-menu-catalog--item--span Persönliche Sachen
+                li.popup-menu-catalog--item
+                    a.popup-icon-pos(href="/")
+                        +icon('dog')
+                        span.popup-menu-catalog--item--span Tiere
+                li.popup-menu-catalog--item
+                    a.popup-icon-pos(href="/")
+                        +icon('komp')
+                        span.popup-menu-catalog--item--span Elektronick
+                li.popup-menu-catalog--item
+                    a.popup-icon-pos(href="/")
+                        +icon('curch')
+                        span.popup-menu-catalog--item--span Haushalt
+                li.popup-menu-catalog--item
+                    a.popup-icon-pos(href="/")
+                        +icon('bal')
+                        span.popup-menu-catalog--item--span Sport, Hobby & Freizeit
+                li.popup-menu-catalog--item
+                    a(href="/")
+                        +icon('dol')
+                        span.popup-menu-catalog--item--span Business
+        .col-xl-4.popup-menu-areas
+            ul.popup-header-my-items--list2.active
+                .popup-header-my-items--item--title Persönliche Sachen
+                li.popup-header-my-items--item--level2.active
+                    a(href="/") Kleidung, Schuhe, Accessoires
+                li.popup-header-my-items--item--level2
+                    a(href="/") Kleidung für Kinder
+                li.popup-header-my-items--item--level2
+                    a(href="/") Spielzeug
+                li.popup-header-my-items--item--level2
+                    a(href="/") Uhren & Schmuck
+                li.popup-header-my-items--item--level2
+                    a(href="/") Beauty & Gesundheit
+        .col-xl-4.popup-menu-areas
+            ul.popup-header-my-items--list3.active
+                .popup-header-my-items--item--title Kleidung, Schuhe, Accessoires
+                li.popup-header-my-items--item--level3
+                    a(href="/") Damenmode
+                li.popup-header-my-items--item--level3
+                    a(href="/") Herrenmode
+                li.popup-header-my-items--item--level3
+                    a(href="/") Schuhe
+                li.popup-header-my-items--item--level3
+                    a(href="/") Taschen, Koffer
+                li.popup-header-my-items--item--level3
+                    a(href="/") Kleidungpflege
+                li.popup-header-my-items--item--level3
+                    a(href="/") Maskenball
+                li.popup-header-my-items--item--level3
+                    a(href="/") Accessoires
+
+
+

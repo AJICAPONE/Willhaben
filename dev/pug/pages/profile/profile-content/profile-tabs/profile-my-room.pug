@@ -1,0 +1,41 @@
+.profile-my-room-tab
+    h4.profile-tab-title Meine Anzeigen
+    .profile-tabs-my-room
+        .profile-tabs-my-room-tab.active(data-area="active-ad") Aktive
+            span 2
+        .profile-tabs-my-room-tab(data-area="active-over") Abgeschlossene
+    .profile-tabs-my-room--content-wrapper
+        .profile-tabs-my-room--content.active-ad.active
+            .profile-tabs-my-room--content__item
+                img.profile-tabs-my-room--content__item-img(src="static/img/content/slider/velo.png")
+                .profile-tabs-my-room--content__item--info
+                    span.profile-tabs-my-room--content__item-name
+                        span Mountainbike
+                        .profile-tabs-my-room-contein-icon
+                            a(href="/")
+                                +icon('red')
+                            a(href="/")
+                                +icon('trash')
+                    span.profile-tabs-my-room--content__item-price 700 €
+                    span.profile-tabs-my-room--content__item-desc Mountainbike in einwandfreiem Zustand mit vielen Ex...
+
+            .profile-tabs-my-room--content__item
+                img.profile-tabs-my-room--content__item-img(src="static/img/general/none.png")
+                .profile-tabs-my-room--content__item--info
+                    span.profile-tabs-my-room--content__item-name
+                        span Mountainbike
+                        .profile-tabs-my-room-contein-icon
+                            a(href="/")
+                                +icon('red')
+                            a(href="/")
+                                +icon('trash')
+                    span.profile-tabs-my-room--content__item-price 700 €
+                    span.profile-tabs-my-room--content__item-desc Mountainbike in einwandfreiem Zustand mit vielen Ex...
+            a.willhaben-button.profile-add-advert(href="/") Anzeige aufgeben
+        .profile-tabs-my-room--content.active-over
+            p Sie haben noch keine abgeschlossenen Anzeigen
+            a.willhaben-button.profile-add-advert(href="/") Anzeige aufgeben
+
+
+
+

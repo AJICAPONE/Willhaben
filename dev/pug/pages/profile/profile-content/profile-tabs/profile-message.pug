@@ -1,0 +1,127 @@
+.profile-my-room-tab
+    h4.profile-tab-title Nachrichten
+    .profile-tabs-my-room
+        .profile-tabs-my-room-tab.active(data-area="message-all") Alle Nachrichten
+        .profile-tabs-my-room-tab(data-area="message-offer") Austauschvorschläge
+        .profile-tabs-my-room-tab(data-area="message-black") Black list
+
+    .profile-tabs-my-room--content-wrapper
+        .profile-tabs-my-room--content.message-all.active
+            .message-massage-all-input
+                select.test
+                    option(value="1") Meine Anzeigen
+                    option(value="2") По моим объявлениям2
+                    option(value="3") По моим объявлениям3
+            .controls-message
+                .index-checkbox-search
+                    input.input-search-photo-agree#check-all(type="checkbox")
+                    label(for="check-all")
+                    span Alle auswählen
+                a.blocked-message.message-actions(href="/")
+                    +icon('blocked')
+                    span Black list
+                a.delete-message.message-actions(href="/")
+                    +icon('trash')
+                    span löschen
+            ul.message-area-all-list
+                .message-area-all-item--wrapper
+                    input.message-area-all-item-check.check-message(type="checkbox")
+                    .message-area-all-item-check-check
+                    li.message-area-all-item
+                        .message-area-all-item-checkbox
+                            img.message-area-all-item__img(src="static/img/content/slider/velo.png")
+                        .message-area-all-item__info
+                            .message-area-all-item--name-title--date-wrap
+                                span.message-area-all-item--name-title Mountainbike
+                                span.message-area-all-item--name-date heute
+                                    span.message-area-all-item--name-time 12:40
+                            .message-area-all-item__info--profile
+                                img.message-area-all-item__info__img-profile(src="static/img/general/seller.png")
+                                .message-area-all-item__info--profile--name-and-mess
+                                    span.message-area-all-item__info--profile--name Sebastian Kurz
+                                    p.message-area-all-item__info--profile--mess Hallo! Wie gehts?
+                .message-area-all-item--wrapper
+                    input.message-area-all-item-check.check-message(type="checkbox")
+                    .message-area-all-item-check-check
+                    li.message-area-all-item
+                        .message-area-all-item-checkbox
+                            img.message-area-all-item__img(src="static/img/content/slider/velo.png")
+                        .message-area-all-item__info
+                            .message-area-all-item--name-title--date-wrap
+                                span.message-area-all-item--name-title Mountainbike
+                                span.message-area-all-item--name-date heute
+                                    span.message-area-all-item--name-time 12:40
+                            .message-area-all-item__info--profile
+                                img.message-area-all-item__info__img-profile(src="static/img/general/seller.png")
+                                .message-area-all-item__info--profile--name-and-mess
+                                    span.message-area-all-item__info--profile--name Sebastian Kurz
+                                    p.message-area-all-item__info--profile--mess Hallo! Wie gehts?
+
+        .profile-tabs-my-room--content.message-offer
+            .message-massage-all-input
+                select.test
+                    option(value="1") Meine Anzeigen
+                    option(value="2") По моим объявлениям2
+                    option(value="3") По моим объявлениям3
+            .controls-message
+                .index-checkbox-search
+                    input.input-search-photo-agree#check-offer(type="checkbox")
+                    label(for="check-offer")
+                    span Alle auswählen
+                a.blocked-message.message-actions(href="/")
+                    +icon('blocked')
+                    span Black list
+                a.delete-message.message-actions(href="/")
+                    +icon('trash')
+                    span löschen
+            ul.message-area-all-list
+                .message-area-all-item--wrapper
+                    input.message-area-all-item-check.check-message2(type="checkbox")
+                    .message-area-all-item-check-check2
+                    li.message-area-all-item
+                        .message-area-all-item-checkbox
+                            img.message-area-all-item__img(src="static/img/content/slider/velo.png")
+                        .message-area-all-item__info
+                            .message-area-all-item--name-title--date-wrap
+                                span.message-area-all-item--name-title Mountainbike
+                                span.message-area-all-item--name-date heute
+                                    span.message-area-all-item--name-time 9:23
+                            .message-area-all-item__info--profile
+                                img.message-area-all-item__info__img-profile(src="static/img/general/seller.png")
+                                .message-area-all-item__info--profile--name-and-mess
+                                    span.message-area-all-item__info--profile--name Sebastian Kurz
+                                    p.message-area-all-item__info--profile--mess Hallo! Wie gehts?
+                .message-area-all-item--wrapper
+                    input.message-area-all-item-check.check-message2(type="checkbox")
+                    .message-area-all-item-check-check2
+                    li.message-area-all-item
+                        .message-area-all-item-checkbox
+                            img.message-area-all-item__img(src="static/img/content/slider/velo.png")
+                        .message-area-all-item__info
+                            .message-area-all-item--name-title--date-wrap
+                                span.message-area-all-item--name-title Mountainbike
+                                span.message-area-all-item--name-date heute
+                                    span.message-area-all-item--name-time 9:23
+                            .message-area-all-item__info--profile
+                                img.message-area-all-item__info__img-profile(src="static/img/general/seller.png")
+                                .message-area-all-item__info--profile--name-and-mess
+                                    span.message-area-all-item__info--profile--name Sebastian Kurz
+                                    p.message-area-all-item__info--profile--mess Hallo! Wie gehts?
+        .profile-tabs-my-room--content.message-black
+            table.massage-blacklist-wrap
+                tbody.massage-blacklist-list-wrap
+                    tr
+                        td.massage-blacklist-people.massage-blacklist-people--title.massage-people-black-name Nutzer
+                        td.massage-blacklist-item.massage-blacklist-people--title Anzeige
+                    tr
+                        td.massage-blacklist-people Sebastian Kurz
+                        td.massage-blacklist-item Mountainbike in einwandfreiem Zustand
+                    tr
+                        td.massage-blacklist-people Sebastian Kurz
+                        td.massage-blacklist-item Mountainbike in einwandfreiem Zustand
+                    tr
+                        td.massage-blacklist-people Sebastian Kurz
+                        td.massage-blacklist-item Mountainbike in einwandfreiem Zustand
+                    tr
+                        td.massage-blacklist-people Sebastian Kurz
+                        td.massage-blacklist-item Mountainbike in einwandfreiem Zustand

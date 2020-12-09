@@ -1,0 +1,29 @@
+section.profile
+    .container
+        h4.section-title.profile-my-room Mein Profil
+        .profile-my-room--wrap
+            .col-12.col-sm-12.col-lg-3.col-xl-3.personal-area-wrap
+                ul.personal-area--list
+                    li.personal-area--item.active(data-area="personal-area") Meine Anzeigen
+                    li.personal-area--item(data-area="rating") Bewertung und Feedback
+                    li.personal-area--item(data-area="messenge") Nachrichten
+                    li.personal-area--item(data-area="notification") Benachrichtigungen
+                    li.personal-area--item(data-area="purce") Konto
+                    li.personal-area--item(data-area="paid-services") Entgeltliche Dienste
+                    li.personal-area--item(data-area="settings") Einstellungen
+            .col-12.col-sm-12.col-lg-9.col-xl-9.personal-tabs-info-width
+                .personal-tabs
+                    .personal-tabs-wrap.personal-area.active
+                        include ../profile-content/profile-tabs/profile-my-room
+                    .personal-tabs-wrap.rating
+                        include ../profile-content/profile-tabs/profile-review
+                    .personal-tabs-wrap.messenge
+                        include ../profile-content/profile-tabs/profile-message
+                    .personal-tabs-wrap.notification
+                        include ../profile-content/profile-tabs/profile-notific
+                    .personal-tabs-wrap.purce
+                        include ../profile-content/profile-tabs/profile-pay
+                    .personal-tabs-wrap.paid-services
+                        include ../profile-content/profile-tabs/profile-bye
+                    .personal-tabs-wrap.settings
+                        include ../profile-content/profile-tabs/profile-settings

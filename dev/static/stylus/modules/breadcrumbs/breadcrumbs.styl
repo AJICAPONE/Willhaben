@@ -1,0 +1,62 @@
+.breadcrumbs-list
+  display flex
+
+.breadcrumbs-items
+  display flex
+  align-items center
+  margin 0 15px
+  font-size 12px
+  font-family OSSB, sans-serif
+  position relative
+
+  a
+    color #01AAFF
+
+  &:before
+    content ''
+    position absolute
+    right -17px
+    size(5px)
+    background-color #ADADAD
+    border-radius 50%
+
+  &:first-child
+    margin-left 0
+
+.breadcrumbs-items:last-child:before
+    display none
+
+.breadcrumbs .container
+  display flex
+  justify-content space-between
+
+.breadcrumb-controls
+  display flex
+  line-height: 1;
+
+.breadcrumb-arrows
+  color #01AAFF
+  font-size 13px
+  display: flex;
+  align-items: center;
+  font-family OSSB, sans-serif
+
+  .icon
+    size(6px,14px)
+    fill #939393
+
+.breadcrumb-prev
+  flex-direction row-reverse
+  padding-right 10px
+  border-right 1.2px solid #939393
+
+  .icon
+    margin-right: 5px;
+
+.breadcrumb-next
+  margin-left 10px
+
+  .icon
+    transform rotate(180deg)
+    margin-left 10px
+
